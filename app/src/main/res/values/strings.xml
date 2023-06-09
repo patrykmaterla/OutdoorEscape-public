@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">OutdoorEscape</string>
     <string name="web_client_id">158918463249-s806430f4fja21g7q4m44vg9in41kboi.apps.googleusercontent.com</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

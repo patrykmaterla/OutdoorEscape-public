@@ -1,30 +1,20 @@
 package com.example.outdoorescape
 
-import android.app.Activity
-import android.content.ContentValues.TAG
 import android.content.Intent
-import android.content.IntentSender
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import androidx.activity.result.ActivityResult
-import androidx.activity.result.ActivityResultCallback
 import androidx.activity.result.ActivityResultLauncher
-import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.auth.api.identity.BeginSignInRequest
-import com.google.android.gms.auth.api.identity.Identity
 import com.google.android.gms.auth.api.identity.SignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
+import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.SignInButton
-import com.google.android.gms.common.api.ApiException
-import com.google.android.gms.common.api.CommonStatusCodes
-import com.google.android.gms.signin.internal.SignInClientImpl
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import kotlinx.coroutines.CoroutineScope
@@ -32,6 +22,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
 import kotlinx.coroutines.withContext
+import java.util.*
+
 
 const val REQUEST_CODE_SIGN_IN = 0
 
@@ -62,7 +54,18 @@ class MainActivity : AppCompatActivity() {
     private lateinit var etPasswordLogin: EditText
     private lateinit var btnGoogleSignIn: SignInButton
     private lateinit var activityResultLauncher: ActivityResultLauncher<Intent>
+    private lateinit var btnSignOut: Button
 
+    private lateinit var mGoogleSignInClient: GoogleSignInClient
+    private lateinit var gso: GoogleSignInOptions
+
+
+    override fun onStart() {
+        super.onStart()
+        var account = GoogleSignIn.getLastSignedInAccount(this)
+//        updateUI(account)
+
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -78,29 +81,27 @@ class MainActivity : AppCompatActivity() {
         etEmailLogin = findViewById(R.id.etEmailLogin)
         etPasswordLogin = findViewById(R.id.etPasswordLogin)
         btnGoogleSignIn = findViewById(R.id.btnGoogleSignIn)
+        btnSignOut = findViewById(R.id.btnSignOut)
 
-        activityResultLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
-            result: ActivityResult ->
-                if (result.resultCode == REQUEST_CODE_SIGN_IN) {
-                    val account = GoogleSignIn.getSignedInAccountFromIntent(result.data).result
-                    account?.let {
-                        googleAuthForFirebase(it)
-                    }
-                }
-        }
+        gso= GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+            .requestEmail()
+            .build()
+
+        mGoogleSignInClient = GoogleSignIn.getClient(this, gso)
+
+        mGoogleSignInClient.revokeAccess(); // Helps display the Google Sign In UI
 
 
-        /*
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        if(requestCode == REQUEST_CODE_SIGN_IN) {
-            val account = GoogleSignIn.getSignedInAccountFromIntent(data).result
-            account?.let {
-                googleAuthForFirebase(it)
-            }
-        }
-    }
- */
+
+//        activityResultLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+//                result: ActivityResult ->
+//            if (result.resultCode == REQUEST_CODE_SIGN_IN) {
+//                val account = GoogleSignIn.getSignedInAccountFromIntent(result.data).result
+//                account?.let {
+//                    googleAuthForFirebase(it)
+//                }
+//            }
+//        }
 
 
         btnRegister.setOnClickListener {
@@ -111,6 +112,10 @@ class MainActivity : AppCompatActivity() {
             loginUser()
         }
 
+        btnSignOut.setOnClickListener {
+            signOutUser()
+        }
+
         btnGoogleSignIn.setOnClickListener {
             val googleSignInOptions = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.web_client_id))
@@ -119,11 +124,17 @@ class MainActivity : AppCompatActivity() {
             val signInClient = GoogleSignIn.getClient(this, googleSignInOptions)
             signInClient.signInIntent.also {
                 startActivityForResult(it, REQUEST_CODE_SIGN_IN)
-//                activityResultLauncher.launch(it)
+//                activityResultLauncher.launch(it) // What is it?
             }
         }
 
 
+
+//        findViewById(R.id.btnGoogleSignIn).setOnClickListener(this)
+//
+//        onClick(v: View) {
+//
+//        }
 
 
 
@@ -228,6 +239,17 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    /**
+     * Sign out the user.
+     */
+    private fun signOutUser() {
+        if (firebaseAuth.currentUser != null) {
+            firebaseAuth.signOut()
+            mGoogleSignInClient.revokeAccess(); // Helps display the Google Sign In UI
+            checkLoggedInState()
+        }
+    }
+
     private fun registerUser() {
         val email = etEmailRegister.text.toString()
         val password = etPasswordRegister.text.toString()
@@ -237,6 +259,7 @@ class MainActivity : AppCompatActivity() {
                     firebaseAuth.createUserWithEmailAndPassword(email, password).await()
                     withContext(Dispatchers.Main) {
                         checkLoggedInState()
+                        clearUserInput()
                     }
                 } catch (e: Exception) {
                     withContext(Dispatchers.Main) {
@@ -247,6 +270,22 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * Clears user input from <EditText> element.
+     */
+    private fun clearUserInput() {
+        etEmailRegister.text.clear()
+        etPasswordRegister.text.clear()
+        etEmailLogin.text.clear()
+        etPasswordLogin.text.clear()
+    }
+
+    /**
+     * Test of KDoc
+     *
+     * @author Patryk Materla
+     * @param no yes
+     */
     private fun loginUser() {
         val email = etEmailLogin.text.toString()
         val password = etPasswordLogin.text.toString()
@@ -256,6 +295,9 @@ class MainActivity : AppCompatActivity() {
                     firebaseAuth.signInWithEmailAndPassword(email, password).await()
                     withContext(Dispatchers.Main) {
                         checkLoggedInState()
+                        clearUserInput()
+                        // redirect user to dashboard
+
                     }
                 } catch (e: Exception) {
                     withContext(Dispatchers.Main) {
@@ -266,6 +308,10 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * Check if any user is signed in and
+     * change the text that indicates if there is any user signed in.
+     */
     private fun checkLoggedInState() {
         if (firebaseAuth.currentUser == null) { // not logged in
             tvLoggedIn.text = "You are not logged in"
@@ -273,27 +319,6 @@ class MainActivity : AppCompatActivity() {
             tvLoggedIn.text = "You are logged in!"
         }
     }
-
-//    private fun updateProfile() {
-//        val user firebaseAuth.currentUser
-//    }
-
-    private fun googleAuthForFirebase(account: GoogleSignInAccount) {
-        val credentials = GoogleAuthProvider.getCredential(account.idToken, null)
-        CoroutineScope(Dispatchers.IO).launch {
-            try {
-                firebaseAuth.signInWithCredential(credentials).await()
-                withContext(Dispatchers.Main) {
-                    Toast.makeText(this@MainActivity, "Successfully logged in", Toast.LENGTH_LONG).show()
-                }
-            } catch (e: Exception) {
-                withContext(Dispatchers.Main) {
-                    Toast.makeText(this@MainActivity, e.message, Toast.LENGTH_LONG).show()
-                }
-            }
-        }
-    }
-
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
@@ -304,6 +329,41 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
+    private fun googleAuthForFirebase(account: GoogleSignInAccount) {
+        val credentials = GoogleAuthProvider.getCredential(account.idToken, null)
+        CoroutineScope(Dispatchers.IO).launch {
+            try {
+                firebaseAuth.signInWithCredential(credentials).await()
+                withContext(Dispatchers.Main) {
+                    Toast.makeText(this@MainActivity, "Successfully logged in", Toast.LENGTH_LONG).show()
+                    checkLoggedInState()
+                }
+            } catch (e: Exception) {
+                withContext(Dispatchers.Main) {
+                    Toast.makeText(this@MainActivity, e.message, Toast.LENGTH_LONG).show()
+                    checkLoggedInState()
+                }
+            }
+        }
+    }
+
+//    private fun updateProfile() {
+//        val user firebaseAuth.currentUser
+//    }
+
+
+
+
+//    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+//        super.onActivityResult(requestCode, resultCode, data)
+//        if(requestCode == REQUEST_CODE_SIGN_IN) {
+//            val account = GoogleSignIn.getSignedInAccountFromIntent(data).result
+//            account?.let {
+//                googleAuthForFirebase(it)
+//            }
+//        }
+//    }
 
 
 
