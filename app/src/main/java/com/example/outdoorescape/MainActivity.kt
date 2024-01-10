@@ -1,7 +1,9 @@
 package com.example.outdoorescape
 
+import android.content.ComponentName
 import android.content.Intent
 import android.os.Bundle
+import android.os.Parcelable
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -109,7 +111,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnLogin.setOnClickListener {
-            loginUser()
+            // loginUser()
+            sendToMainActivity()
         }
 
         btnSignOut.setOnClickListener {
@@ -298,6 +301,21 @@ class MainActivity : AppCompatActivity() {
                         clearUserInput()
                         // redirect user to dashboard
 
+//                        val intent = Intent(this@MainActivity, Dashboard::class.java)
+//                        // Get the component name of the nested intent.
+//                        val forward = intent.getParcelableExtra<Parcelable>("key") as Intent
+//                        val name: ComponentName = forward.resolveActivity(packageManager)
+//                        // Check that the package name and class name contain the expected values.
+////                        if (name.packagename == "safe_package" && name.className == "safe_class") {
+//                        if (true) {
+//                            // Redirect the nested intent.
+//                            startActivity(forward)
+//
+//                        }
+
+
+                        sendToMainActivity()
+
                     }
                 } catch (e: Exception) {
                     withContext(Dispatchers.Main) {
@@ -399,4 +417,10 @@ class MainActivity : AppCompatActivity() {
 //        }
 //
 //    }
+    private fun sendToMainActivity() {
+        var intent = Intent(this@MainActivity,Dashboard::class.java)
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+        startActivity(intent)
+        finish()
+    }
 }
