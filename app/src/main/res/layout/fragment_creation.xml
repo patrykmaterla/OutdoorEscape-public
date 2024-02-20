@@ -11,7 +11,7 @@
         android:id="@+id/tvCreation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Creation"
+        android:text="@string/title_creation"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

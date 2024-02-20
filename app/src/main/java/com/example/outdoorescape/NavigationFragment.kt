@@ -3,6 +3,7 @@ package com.example.outdoorescape
 import android.Manifest
 import android.annotation.SuppressLint
 import android.content.pm.PackageManager
+import android.graphics.Color
 import android.location.Location
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -22,6 +23,7 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import com.google.android.gms.maps.model.PolylineOptions
 
 class NavigationFragment : Fragment() {
 
@@ -53,19 +55,44 @@ class NavigationFragment : Fragment() {
         // var sydney = LatLng(-34.0, 151.0)
 
         fusedLocationProviderClient.lastLocation.addOnSuccessListener {
+
+            // TODO
+            // location: Location? ->
+            // this.latitude = location!!.latitude
+            // this.longitude = location!!.longitude
+            // Toast.makeText(context, "${location.latitude} ${location.longitude}", Toast.LENGTH_SHORT).show()
+
                 location: Location? ->
-            this.latitude = location!!.latitude
-            this.longitude = location!!.longitude
-            Toast.makeText(context, "${location.latitude} ${location.longitude}", Toast.LENGTH_SHORT).show()
+            if (location != null) {
+                this.latitude = location.latitude
+                this.longitude = location.longitude
+                Toast.makeText(context, "${location.latitude} ${location.longitude}", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(context, "Location is null", Toast.LENGTH_SHORT).show()
+            }
+
 
 
             var sydney = LatLng(latitude, longitude)
-            // map.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
+            map.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
             map.moveCamera(CameraUpdateFactory.newLatLng(sydney))
             map.moveCamera(CameraUpdateFactory.zoomTo(15f))
             enableMyLocation()
 
+            /**
+             * Straight red line between 2 locations
+             */
+            // val startPoint = LatLng(latitude, longitude)
+            // val endPoint = LatLng(50.00, 45.00)
+            // val polylineOptions = PolylineOptions()
+            //     .add(startPoint, endPoint)
+            //     .color(Color.RED)
+            //     .width(5f)
+            // googleMap.addPolyline(polylineOptions)
+
+
         }
+
         // Toast.makeText(context, "${location.latitude} ${location.longitude}", Toast.LENGTH_LONG).show()
 
         // var sydney = LatLng(latitude, 0.0)
@@ -108,7 +135,7 @@ class NavigationFragment : Fragment() {
         // startLocationUpdates()
     }
 
-
+    /*
     // protected fun startLocationUpdates() {
     //     // initialize location request object
     //     mLocationRequest = LocationRequest.create()
@@ -178,6 +205,7 @@ class NavigationFragment : Fragment() {
     //         }
     //     }
     // }
+     */
 
     /**
      * Enables the My Location layer if the fine location permission has been granted.

@@ -10,7 +10,7 @@
         android:id="@+id/tvNavigation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Navigation"
+        android:text="@string/title_navigation"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,9 +20,108 @@
     <fragment
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clStats"
         tools:context=".MapsFragment"
-        tools:layout="@android:layout/simple_gallery_item" />
+        tools:layout="@layout/map_preview" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnStart"
+            android:contentDescription="@string/start_activity"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="8dp"
+            android:padding="2dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/green"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_start" />
+
+        <ImageButton
+            android:id="@+id/btnStop"
+            android:contentDescription="@string/stop_activity"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:padding="4dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/red"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_stop" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clStats"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/ProfilePink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvDurationValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00:00"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/duration"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/tvDurationValue"
+                app:layout_constraintStart_toStartOf="@+id/tvDurationValue"
+                app:layout_constraintTop_toBottomOf="@+id/tvDurationValue" />
+
+            <TextView
+                android:id="@+id/tvDistanceValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="0.00"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/tvDurationValue"
+                app:layout_constraintTop_toTopOf="@+id/tvDurationValue" />
+
+            <TextView
+                android:id="@+id/tvDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/duration"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/tvDistanceValue"
+                app:layout_constraintStart_toStartOf="@+id/tvDistanceValue"
+                app:layout_constraintTop_toBottomOf="@+id/tvDistanceValue" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

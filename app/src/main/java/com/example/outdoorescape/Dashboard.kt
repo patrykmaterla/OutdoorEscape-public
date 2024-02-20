@@ -3,6 +3,7 @@ package com.example.outdoorescape
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.WindowCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -17,6 +18,8 @@ class Dashboard : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        // Status bar color
+        // WindowCompat.setDecorFitsSystemWindows(window, false)
 
         binding = ActivityDashboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -46,6 +49,9 @@ class Dashboard : AppCompatActivity() {
             }
             true
         }
+
+
+
     }
 
     private fun setCurrentFragment(fragment: Fragment) {

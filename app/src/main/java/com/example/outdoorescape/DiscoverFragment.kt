@@ -7,11 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 /**
  * A simple [Fragment] subclass.
@@ -19,16 +16,9 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class DiscoverFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
     }
 
     override fun onCreateView(
@@ -37,31 +27,40 @@ class DiscoverFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_discover, container, false)
+    }
 
-        // view?.findViewById<Button>(R.id.button2)?.setOnClickListener {
-        //     var intent = Intent(context, MapsFragment::class.java).apply {
-        //         startActivity(this)
-        //     }
-        // }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val rvDiscover = view.findViewById<RecyclerView>(R.id.rvDiscover)
+
+        rvDiscover.layoutManager = LinearLayoutManager(requireContext())
+
+        val data = ArrayList<ItemDiscoverViewModel>()
+
+        // Dummy data
+        for (i in 1..20) {
+            data.add(ItemDiscoverViewModel(R.drawable.map, getString(R.string.discover_trail_title), getString(R.string.discover_trail_description), 2.13f))
+        }
+
+        val adapter = DiscoverItemAdapter(data)
+        adapter.setOnItemClickListener(object : DiscoverItemAdapter.OnItemClickListener {
+            override fun onItemClick(position: Int) {
+
+            }
+        })
+        rvDiscover.adapter = adapter
+
+
+
+        rvDiscover.adapter = adapter
+        /**
+         * Changing fragment on click
+         */
+
     }
 
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment DiscoverFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            DiscoverFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+        fun newInstance(param1: String, param2: String) = DiscoverFragment()
     }
 }

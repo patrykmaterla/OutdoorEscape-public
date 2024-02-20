@@ -45,19 +45,21 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
     // Add the dependency for the Firebase SDK for Google Analytics
-    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx:21.5.1'
 
     implementation 'com.google.android.gms:play-services-auth:20.7.0'
 
     // Import the Firebase BoM
-    implementation platform('com.google.firebase:firebase-bom:32.0.0')
-    implementation 'com.google.firebase:firebase-auth-ktx:22.0.0'
+    implementation platform('com.google.firebase:firebase-bom:32.7.2')
+    implementation 'com.google.firebase:firebase-auth-ktx:22.3.1'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.1'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.4.1'
     implementation 'androidx.navigation:navigation-ui-ktx:2.4.1'
     implementation 'com.google.android.gms:play-services-maps:18.2.0'
     implementation 'com.google.android.libraries.maps:maps:3.1.0-beta'
+    implementation 'androidx.preference:preference:1.2.0'
+    implementation 'com.google.firebase:firebase-auth:22.3.1'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
@@ -66,14 +68,18 @@ dependencies {
 //    dokkaPlugin("org.jetbrains.dokka:android-documentation-plugin:1.8.10")
 
     // Maps
+//    implementation 'com.google.android.gms:play-services-maps:18.2.0'
     implementation 'com.google.android.gms:play-services-maps:18.2.0'
-    implementation 'com.google.android.gms:play-services-location:21.0.1'
+//    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation 'com.google.android.gms:play-services-location:21.1.0'
     implementation 'com.google.maps.android:android-maps-utils:3.8.0'
 
     // KTX for the Maps SDK for Android library
     implementation 'com.google.maps.android:maps-ktx:5.0.0'
 
     implementation 'com.android.volley:volley:1.2.1'
+
+    implementation 'com.github.shobhitpuri:custom-google-signin-button:2.0.0'
 
 
 
