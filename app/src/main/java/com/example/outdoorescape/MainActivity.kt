@@ -1,62 +1,32 @@
 package com.example.outdoorescape
 
 import LocaleHelper
-import android.app.Activity
-import android.content.Context
+import android.Manifest
 import android.content.Intent
 import android.content.SharedPreferences
+import android.content.pm.PackageManager
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.example.outdoorescape.databinding.ActivityDashboardBinding
-import com.google.android.gms.auth.api.signin.GoogleSignIn
-
 
 private lateinit var sharedPreferences: SharedPreferences
-private var isLoggedIn: Boolean? = null
+private var isSignedIn: Boolean? = null
 private var langPref: String? = null
 private var once: Boolean = true
-// const val REQUEST_CODE_SIGN_IN = 0
 
 class MainActivity : AppCompatActivity() {
 
     private var initialLocale: String? = null
-
     private lateinit var binding: ActivityDashboardBinding
-
-    // override fun attachBaseContext(base: Context?) {
-    //     super.attachBaseContext(onAttach(base!!))
-    // }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        // langPref = sharedPreferences.getString("lang_pref", "")
-        // langPref = LocaleHelper.getPersistedLocale(this)
-
-
-        // Status bar color
-        // WindowCompat.setDecorFitsSystemWindows(window, false)
-
         binding = ActivityDashboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        val discoverFragment = DiscoverFragment()
-
-        // val bottomNavigationView: BottomNavigationView = binding.bottomNavigationView
-
-        // val navController = findNavController(R.id.nav_host_fragment_activity_dashboard)
-        // // Passing each menu ID as a set of Ids because each
-        // // menu should be considered as top level destinations.
-        // val appBarConfiguration = AppBarConfiguration(
-        //     setOf(
-        //         R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
-        //     )
-        // )
-        // setupActionBarWithNavController(navController, appBarConfiguration)
-        // bottomNavigationView.setupWithNavController(navController)
 
         binding.bottomNavigationView.setOnItemSelectedListener {
             when(it.itemId) {
@@ -68,463 +38,73 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
-        initialLocale = LocaleHelper.getPersistedLocale(this);
+
+        initialLocale = LocaleHelper.getPersistedLocale(this)
     }
 
-    fun triggerRestart(context: Activity) {
-        val intent = Intent(context, MainActivity::class.java).apply {
-            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-        }
-        context.startActivity(intent)
-        context.finish()
-        kotlin.system.exitProcess(0)
-    }
     override fun onStart() {
         super.onStart()
 
         sharedPreferences = getSharedPreferences("shared_pref", MODE_PRIVATE)
-        // To load and save data
-        isLoggedIn = sharedPreferences.getBoolean("isLoggedIn", false)
 
-        // langPreferences = getSharedPreferences("lang_pref")
         langPref = sharedPreferences.getString("lang_pref", "")
-        LocaleHelper.setLocale(this, langPref!!)
+        isSignedIn = sharedPreferences.getBoolean("is_signed_in", false)
 
+        if (langPref == "") {
+            langPref = LocaleHelper.getDeviceLocale()
+        }
+        LocaleHelper.setLocale(this, langPref!!)
         while (once) {
             recreate()
             once = false
         }
 
-        // Tutaj jak robie recreate to sie znowu onstart wlacza i znowu recreate
-        // tylko raz sprawdza ten waruneczek
-        if (langPref == "") {
-            langPref = LocaleHelper.getDeviceLocale()
-            LocaleHelper.setLocale(applicationContext, langPref!!)
-            recreate()
-        }
-        // else {
-        //     LocaleHelper.setLocale(applicationContext, langPref!!)
-        //     recreate()
-        // }
-
-        if (isLoggedIn == false) {
+        // If user did not signed in send him to AuthActivity
+        if (isSignedIn == false) {
             Intent(this@MainActivity, AuthActivity::class.java).apply {
                 startActivity(this)
                 finish()
             }
         }
-        var account = GoogleSignIn.getLastSignedInAccount(this)
-        // updateUI(account)
-    }
+        // var account = GoogleSignIn.getLastSignedInAccount(this)
 
-    private fun setCurrentFragment(fragment: Fragment) {
-            supportFragmentManager.beginTransaction().apply {
-                replace(R.id.fragmentContainerView, fragment)
-                commit()
-            }
+        // Request location permission
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+            // Permission already granted
+        } else {
+            // Request permission
+            ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), LOCATION_PERMISSION_REQUEST_CODE)
+        }
     }
 
     override fun onResume() {
         super.onResume()
         if (initialLocale != null && !initialLocale.equals(LocaleHelper.getPersistedLocale(this))) {
-            recreate();
+            recreate()
         }
     }
 
-//     private lateinit var oneTapClient: SignInClient
-//     private lateinit var signInRequest: BeginSignInRequest
-//     private lateinit var signUpRequest: BeginSignInRequest
-//     private lateinit var firebaseAuth: FirebaseAuth // auth
-//     // To check log in state
-//     private val REQ_ONE_TAP = 2
-//     private var showOneTapUI = true
-//     private lateinit var authStateListener: FirebaseAuth.AuthStateListener
-//     // private lateinit var firebaseAuth: FirebaseAuth
-//     // private lateinit var TAG: String
-//     private lateinit var btnSignIn: Button
-//     private lateinit var btnLogin: Button
-//     private lateinit var etEmailRegister: EditText
-//     private lateinit var etPasswordRegister: EditText
-//     private lateinit var tvLoggedIn: TextView
-//     private lateinit var etEmailLogin: EditText
-//     private lateinit var etPasswordLogin: EditText
-//     private lateinit var btnGoogleSignIn: SignInButton
-//     private lateinit var activityResultLauncher: ActivityResultLauncher<Intent>
-//     private lateinit var btnSignOut: Button
-//     private lateinit var mGoogleSignInClient: GoogleSignInClient
-//     private lateinit var gso: GoogleSignInOptions
-//
-//     override fun onStart() {
-//         super.onStart()
-//
-//         if (isLoggedIn == true) {
-//             Intent(this@MainActivity, AuthActivity::class.java).apply {
-//                 startActivity(this)
-//                 finish()
-//             }
-//         }
-//         var account = GoogleSignIn.getLastSignedInAccount(this)
-//         // updateUI(account)
-//     }
-//
-//     override fun onCreate(savedInstanceState: Bundle?) {
-//         super.onCreate(savedInstanceState)
-//         setContentView(R.layout.activity_main)
-//
-//         firebaseAuth = FirebaseAuth.getInstance()
-//
-//         // btnSignIn = findViewById(R.id.btnSignIn)
-//         // btnLogin = findViewById(R.id.btnSignIn)
-//         // etEmailRegister = findViewById(R.id.etEmailRegister)
-//         // etPasswordRegister = findViewById(R.id.etPasswordRegister)
-//         // tvLoggedIn = findViewById(R.id.tvLoggedIn)
-//         // etEmailLogin = findViewById(R.id.etEmailRegister)
-//         // etPasswordLogin = findViewById(R.id.etPasswordRegister)
-//         // btnGoogleSignIn = findViewById(R.id.btnGoogleSignUp)
-//         // btnSignOut = findViewById(R.id.btnSignOut)
-//
-//         gso= GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-//             .requestEmail()
-//             .build()
-//
-//         mGoogleSignInClient = GoogleSignIn.getClient(this, gso)
-//
-//         mGoogleSignInClient.revokeAccess(); // Helps display the Google Sign In UI
-//
-//
-//
-// //        activityResultLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
-// //                result: ActivityResult ->
-// //            if (result.resultCode == REQUEST_CODE_SIGN_IN) {
-// //                val account = GoogleSignIn.getSignedInAccountFromIntent(result.data).result
-// //                account?.let {
-// //                    googleAuthForFirebase(it)
-// //                }
-// //            }
-// //        }
-//
-//
-//         // btnSignIn.setOnClickListener {
-//         //     // registerUser()
-//         // }
-//
-//         // btnLogin.setOnClickListener {
-//         //     // loginUser()
-//         //     // sendToMainActivity()
-//         // }
-//
-//         // btnSignOut.setOnClickListener {
-//         //     // signOutUser()
-//         // }
-//
-// //         btnGoogleSignIn.setOnClickListener {
-// //             val googleSignInOptions = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-// //                 .requestIdToken(getString(R.string.web_client_id))
-// //                 .requestEmail()
-// //                 .build()
-// //             val signInClient = GoogleSignIn.getClient(this, googleSignInOptions)
-// //             signInClient.signInIntent.also {
-// //                 startActivityForResult(it, REQUEST_CODE_SIGN_IN)
-// // //                activityResultLauncher.launch(it) // What is it?
-// //             }
-// //         }
-//
-//
-//
-// //        findViewById(R.id.btnGoogleSignIn).setOnClickListener(this)
-// //
-// //        onClick(v: View) {
-// //
-// //        }
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//     // ---
-//
-//         // Pobierz konto z wyniku logowania Google One Tap
-//         // val signInAccount = GoogleSignIn.getSignedInAccountFromIntent(data).result
-//
-// // Pobierz idToken z konta Google
-//         // val idToken = signInAccount?.idToken
-//
-//         // val googleAuthProvider = GoogleAuthProvider.getCredential(idToken, null)
-//
-// //        oneTapClient = Identity.getSignInClient(this)
-//
-//         /*
-//         signInRequest = BeginSignInRequest.builder()
-//             .setPasswordRequestOptions(BeginSignInRequest.PasswordRequestOptions.builder()
-//                 .setSupported(true)
-//                 .build())
-//             .setGoogleIdTokenRequestOptions(
-//                 BeginSignInRequest.GoogleIdTokenRequestOptions.builder()
-//                     .setSupported(true)
-//                     // Your server's client ID, not your Android client ID.
-//                     .setServerClientId(getString(R.string.web_client_id))
-//                     // Only show accounts previously used to sign in.
-//                     .setFilterByAuthorizedAccounts(true)
-//                     .build())
-//             // Automatically sign in when exactly one credential is retrieved.
-//             .setAutoSelectEnabled(true)
-//             .build()
-//          */
-// /*
-//         // Configure the One Tap client for sign up
-//         signUpRequest = BeginSignInRequest.builder()
-//             .setGoogleIdTokenRequestOptions(
-//                 BeginSignInRequest.GoogleIdTokenRequestOptions.builder()
-//                     .setSupported(true)
-//                     // Your server's client ID, not your Android client ID.
-//                     .setServerClientId(getString(R.string.web_client_id))
-//                     // Show all accounts on the device.
-//                     .setFilterByAuthorizedAccounts(false)
-//                     .build())
-//             .build()
-// */
-//
-//         // Display the OneTap sign-in UI (if user doesn't have account do nothing i guess)
-//         /*
-//         oneTapClient.beginSignIn(signInRequest)
-//             .addOnSuccessListener(this) { result ->
-//                 try {
-//                     startIntentSenderForResult(
-//                         result.pendingIntent.intentSender, REQ_ONE_TAP,
-//                         null, 0, 0, 0, null)
-//                     Toast.makeText(this, "addonscuesfull work", Toast.LENGTH_LONG).show()
-//
-//                 } catch (e: IntentSender.SendIntentException) {
-//                     Log.e(TAG, "Couldn't start One Tap UI: ${e.localizedMessage}")
-//                     Toast.makeText(this, "catch", Toast.LENGTH_LONG).show()
-//                 }
-//             }
-//             .addOnFailureListener(this) { e ->
-//                 // No saved credentials found. Launch the One Tap sign-up flow, or
-//                 // do nothing and continue presenting the signed-out UI.
-//                 Log.d(TAG, e.localizedMessage)
-//                 Toast.makeText(this, "FailFAIL", Toast.LENGTH_LONG).show()
-//
-//             }
-//          */
-//
-//
-//         // Display the One Tap sign-up UI
-// /*
-//         oneTapClient.beginSignIn(signUpRequest)
-//             .addOnSuccessListener(this) { result ->
-//                 try {
-//                     startIntentSenderForResult(
-//                         result.pendingIntent.intentSender, REQ_ONE_TAP,
-//                         null, 0, 0, 0)
-//
-//                 } catch (e: IntentSender.SendIntentException) {
-//                     Log.e(TAG, "Couldn't start One Tap UI: ${e.localizedMessage}")
-//                 }
-//             }
-//             .addOnFailureListener(this) { e ->
-//                 // No Google Accounts found. Just continue presenting the signed-out UI.
-//                 Log.d(TAG, "AddOnFailureListener: ${e.localizedMessage}")
-// //                Toast.makeText(this, "signupFAIL", Toast.LENGTH_LONG).show()
-//
-//             }
-// */
-//
-//         sharedPreferences = getSharedPreferences("shared_pref", MODE_PRIVATE)
-//         // To load and save data
-//         val editor = sharedPreferences.edit()
-//
-//     }
-//
-//
-//
-//     /**
-//      * Sign out the user.
-//      */
-//     // private fun signOutUser() {
-//     //     if (firebaseAuth.currentUser != null) {
-//     //         firebaseAuth.signOut()
-//     //         mGoogleSignInClient.revokeAccess(); // Helps display the Google Sign In UI
-//     //         checkLoggedInState()
-//     //     }
-//     // }
-//
-//     // private fun registerUser() {
-//     //     val email = etEmailRegister.text.toString()
-//     //     val password = etPasswordRegister.text.toString()
-//     //     if (email.isNotEmpty() && password.isNotEmpty()) {
-//     //         CoroutineScope(Dispatchers.IO).launch {
-//     //             try {
-//     //                 firebaseAuth.createUserWithEmailAndPassword(email, password).await()
-//     //                 withContext(Dispatchers.Main) {
-//     //                     checkLoggedInState()
-//     //                     clearUserInput()
-//     //                 }
-//     //             } catch (e: Exception) {
-//     //                 withContext(Dispatchers.Main) {
-//     //                     Toast.makeText(this@MainActivity, e.message, Toast.LENGTH_LONG).show()
-//     //                 }
-//     //             }
-//     //         }
-//     //     }
-//     // }
-//
-//     /**
-//      * Clears user input from <EditText> element.
-//      */
-//     // private fun clearUserInput() {
-//     //     etEmailRegister.text.clear()
-//     //     etPasswordRegister.text.clear()
-//     //     etEmailLogin.text.clear()
-//     //     etPasswordLogin.text.clear()
-//     // }
-//
-//     /**
-//      * Test of KDoc
-//      *
-//      * @author Patryk Materla
-//      * @param no yes
-//      */
-// //     private fun loginUser() {
-// //         val email = etEmailLogin.text.toString()
-// //         val password = etPasswordLogin.text.toString()
-// //         if (email.isNotEmpty() && password.isNotEmpty()) {
-// //             CoroutineScope(Dispatchers.IO).launch {
-// //                 try {
-// //                     firebaseAuth.signInWithEmailAndPassword(email, password).await()
-// //                     withContext(Dispatchers.Main) {
-// //                         checkLoggedInState()
-// //                         clearUserInput()
-// //                         // redirect user to dashboard
-// //
-// // //                        val intent = Intent(this@MainActivity, Dashboard::class.java)
-// // //                        // Get the component name of the nested intent.
-// // //                        val forward = intent.getParcelableExtra<Parcelable>("key") as Intent
-// // //                        val name: ComponentName = forward.resolveActivity(packageManager)
-// // //                        // Check that the package name and class name contain the expected values.
-// // ////                        if (name.packagename == "safe_package" && name.className == "safe_class") {
-// // //                        if (true) {
-// // //                            // Redirect the nested intent.
-// // //                            startActivity(forward)
-// // //
-// // //                        }
-// //
-// //
-// //                         sendToMainActivity()
-// //
-// //                     }
-// //                 } catch (e: Exception) {
-// //                     withContext(Dispatchers.Main) {
-// //                         Toast.makeText(this@MainActivity, e.message, Toast.LENGTH_LONG).show()
-// //                     }
-// //                 }
-// //             }
-// //         }
-// //     }
-//
-//     /**
-//      * Check if any user is signed in and
-//      * change the text that indicates if there is any user signed in.
-//      */
-//     // private fun checkLoggedInState() {
-//     //     if (firebaseAuth.currentUser == null) { // not logged in
-//     //         tvLoggedIn.text = "You are not logged in"
-//     //     } else {
-//     //         tvLoggedIn.text = "You are logged in!"
-//     //     }
-//     // }
-//
-//     // override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-//     //     super.onActivityResult(requestCode, resultCode, data)
-//     //     if(requestCode == REQUEST_CODE_SIGN_IN) {
-//     //         val account = GoogleSignIn.getSignedInAccountFromIntent(data).result
-//     //         account?.let {
-//     //             googleAuthForFirebase(it)
-//     //         }
-//     //     }
-//     // }
-//
-//     // private fun googleAuthForFirebase(account: GoogleSignInAccount) {
-//     //     val credentials = GoogleAuthProvider.getCredential(account.idToken, null)
-//     //     CoroutineScope(Dispatchers.IO).launch {
-//     //         try {
-//     //             firebaseAuth.signInWithCredential(credentials).await()
-//     //             withContext(Dispatchers.Main) {
-//     //                 Toast.makeText(this@MainActivity, "Successfully logged in", Toast.LENGTH_LONG).show()
-//     //                 checkLoggedInState()
-//     //             }
-//     //         } catch (e: Exception) {
-//     //             withContext(Dispatchers.Main) {
-//     //                 Toast.makeText(this@MainActivity, e.message, Toast.LENGTH_LONG).show()
-//     //                 checkLoggedInState()
-//     //             }
-//     //         }
-//     //     }
-//     // }
-//
-// //    private fun updateProfile() {
-// //        val user firebaseAuth.currentUser
-// //    }
-//
-//
-//
-//
-// //    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-// //        super.onActivityResult(requestCode, resultCode, data)
-// //        if(requestCode == REQUEST_CODE_SIGN_IN) {
-// //            val account = GoogleSignIn.getSignedInAccountFromIntent(data).result
-// //            account?.let {
-// //                googleAuthForFirebase(it)
-// //            }
-// //        }
-// //    }
-//
-//
-//
-//     // Stop displaying the OneTap UI
-// //    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-// //        super.onActivityResult(requestCode, resultCode, data)
-// //
-// //        when (requestCode) {
-// //            REQ_ONE_TAP -> {
-// //                try {
-// //                    // ...
-// //                } catch (e: ApiException) {
-// //                    when (e.statusCode) {
-// //                        CommonStatusCodes.CANCELED -> {
-// //                            Log.d(TAG, "One-tap dialog was closed.")
-// //                            // Don't re-prompt the user.
-// //                            showOneTapUI = false
-// //                        }
-// //                        CommonStatusCodes.NETWORK_ERROR -> {
-// //                            Log.d(TAG, "One-tap encountered a network error.")
-// //                            // Try again or just ignore.
-// //                        }
-// //                        else -> {
-// //                            Log.d(
-// //                                TAG, "Couldn't get credential from result." +
-// //                                        " (${e.localizedMessage})"
-// //                            )
-// //                        }
-// //                    }
-// //                }
-// //            }
-// //
-// //        }
-// //
-// //    }
-// //     private fun sendToMainActivity() {
-// //         var intent = Intent(this@MainActivity,Dashboard::class.java)
-// //         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
-// //         startActivity(intent)
-// //         finish()
-// //     }
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String>, grantResults: IntArray) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        when (requestCode) {
+            LOCATION_PERMISSION_REQUEST_CODE -> {
+                if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    // Permission granted, proceed with location-related tasks
+                } else {
+                    // Permission not granted
+                }
+            }
+        }
+    }
+
+    private fun setCurrentFragment(fragment: Fragment) {
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.fragmentContainerView, fragment)
+            commit()
+        }
+    }
+
+    companion object {
+        const val LOCATION_PERMISSION_REQUEST_CODE = 1
+    }
 }

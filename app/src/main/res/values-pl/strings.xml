@@ -71,4 +71,10 @@
     <string name="saved_trails">Zapisane Trasy</string>
     <string name="browse_activities">Przeglądaj Aktywności</string>
     <string name="name_placeholder">Jan Kowalski</string>
+    <string name="please_enable_location">Włącz usługi lokalizacji w ustawieniach urządzenia</string>
+    <string name="location_is_disabled_on_your_device">Lokalizacja jest wyłączona na urządzeniu</string>
+    <string name="steps_unit">kroków</string>
+    <string name="activity_title">Tytuł Aktywności</string>
+    <string name="distance">Distance</string>
+    <string name="calories_burned">Calories Burned</string>
 </resources>

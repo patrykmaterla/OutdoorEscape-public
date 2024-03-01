@@ -26,6 +26,7 @@ android {
         }
     }
     compileOptions {
+        coreLibraryDesugaringEnabled true
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
@@ -81,6 +82,9 @@ dependencies {
 
     implementation 'com.github.shobhitpuri:custom-google-signin-button:2.0.0'
 
+    implementation 'pub.devrel:easypermissions:3.0.0'
+
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.0.4'
 
 
 }

@@ -9,7 +9,7 @@
     <string name="title_notifications">Notifications</string>
     <string name="title_discover">Discover</string>
     <string name="title_creation">Creation</string>
-    <string name="title_navigation">Navigation</string>
+    <string name="title_navigation">Directions</string>
     <string name="title_registration">Registration</string>
     <string name="title_profile">Profile</string>
 
@@ -76,5 +76,12 @@
     <string name="discover_trail_description">Short and brief description of the route</string>
     <string name="saved_trails">Saved Trails</string>
     <string name="browse_activities">Browse Activities</string>
+    <string name="please_enable_location">Please enable location services in your device settings</string>
+    <string name="location_is_disabled_on_your_device">Location is disabled on your device</string>
+    <string name="steps_unit">steps</string>
+    <string name="steps">Steps</string>
+    <string name="activity_title">Activity Title</string>
+    <string name="distance">Distance</string>
+    <string name="calories_burned">Calories Burned</string>
     <!--     AIzaSyCs7BvKdNdWwJt0WQ9qxDFqLuEAtdR64Os -->
 </resources>

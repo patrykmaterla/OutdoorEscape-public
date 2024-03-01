@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -46,18 +47,26 @@ class DiscoverFragment : Fragment() {
         val adapter = DiscoverItemAdapter(data)
         adapter.setOnItemClickListener(object : DiscoverItemAdapter.OnItemClickListener {
             override fun onItemClick(position: Int) {
-
+                setCurrentFragment(TrailFragment())
             }
         })
         rvDiscover.adapter = adapter
 
 
 
-        rvDiscover.adapter = adapter
+        // rvDiscover.adapter = adapter
         /**
          * Changing fragment on click
          */
 
+    }
+
+    private fun setCurrentFragment(fragment: Fragment) {
+        (context as FragmentActivity).supportFragmentManager.beginTransaction().apply {
+            replace(R.id.fragmentContainerView, fragment)
+            addToBackStack("discover_fragment")
+            commit()
+        }
     }
 
     companion object {

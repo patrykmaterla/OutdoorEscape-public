@@ -11,4 +11,8 @@
     <color name="red">#f75157</color>
     <color name="green">#019f35</color>
     <color name="btnBack">#757575</color>
+    <color name="fabSave">#FFFFFF</color>
+    <color name="primary">#FFFFFF</color>
+    <color name="primary_purple">#FFBB86FC</color>
+    <color name="primary_dark">#ff212121</color>
 </resources>
