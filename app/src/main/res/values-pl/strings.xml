@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OutdoorEscape</string>
+    <string name="selected_language">Polish</string>
+    <string name="title_activity_dashboard">Główny Panel</string>
+    <string name="title_home">Dom</string>
+    <string name="title_dashboard">Główny Panel</string>
+    <string name="title_notifications">Powiadomienia</string>
+    <string name="title_discover">Odkrywaj</string>
+    <string name="title_creation">Utwórz</string>
+    <string name="title_navigation">Nawiguj</string>
+    <string name="title_registration">Śledź</string>
+    <string name="title_profile">Profil</string>
+
+    <!-- Permissions -->
+    <string name="permission_rationale_location">Access to the location service is required to demonstrate the \'my location\' feature, which shows your current location on the map.</string>
+    <string name="location_permission_denied">This sample requires location permission to enable the \'my location\' layer. Please try again and grant access to use the location.\nIf the permission has been permanently denied, it can be enabled from the System Settings &gt; Apps &gt; \'Google Maps API Demos\'.</string>
+    <string name="permission_required_toast">Location permission is required for this demo.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="saved_trails_fragment">Zapisane trasy</string>
+    <string name="title_activity_settings">Ustawienia</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Wiadomości</string>
+    <string name="sync_header">Synchronizacja</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Twój podpis</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="about_header">O aplikacji</string>
+    <string name="language_header">Język</string>
+    <string name="logout_header">Wyloguj</string>
+    <string name="feedback_header">Podziel się opinią</string>
+    <string name="language_summary">Polski</string>
+    <string name="english">Angielski</string>
+    <string name="polish">Polski</string>
+    <string name="browse_activities_fragment">Przeglądaj Aktywności</string>
+    <string name="duration">Duration</string>
+    <string name="start_activity">Start activity</string>
+    <string name="stop_activity">Stop activity</string>
+    <string name="app_description">Monitorowanie i zarządzanie trasami</string>
+    <string name="sign_in">Zaloguj się</string>
+    <string name="sign_up">Zarejestruj się</string>
+    <string name="no_account"><u>Kontynuuj bez konta</u></string>
+    <string name="sign_in_title">Logowanie</string>
+    <string name="login_description">Wprowadź swoje dane uwierzytelniające</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="password">Hasło</string>
+    <string name="back_button">Przycisk wróć</string>
+    <string name="register_description">Utwórz nowe konto</string>
+    <string name="google_sign_up">ZAREJESTRUJ SIĘ</string>
+    <string name="google_sign_in">ZALOGUJ SIĘ</string>
+    <string name="discover_description">Znajdź trasy dla swoich aktywności</string>
+    <string name="discover_title">Odkrywaj</string>
+    <string name="browse_activities_description">Historia aktywności fizycznej użytkownika w aplikacji</string>
+    <string name="saved_trails_description">Ścieżki zapisane przez użytkownika są przechowywane tutaj</string>
+    <string name="profile_description">Krótki opis użytkownika aplikacji, w którym użytkownik może opisać swoje zainteresowania i ulubione aktywności.</string>
+    <string name="about_description">Aplikacja do zarządzania trasami i aktywnościami fizycznymi użytkownika. Pozwala na śledzenie aktywności fizycznej użytkownika jak i zarządzać i tworzyć trasy po której użytkownik może się poruszać.</string>
+    <string name="about_developer">Deweloper</string>
+    <string name="about_version">Wersja</string>
+    <string name="discover_trail_title">Trasa</string>
+    <string name="discover_trail_description">Krótki i zwięzły opis danej trasy</string>
+    <string name="saved_trails">Zapisane Trasy</string>
+    <string name="browse_activities">Przeglądaj Aktywności</string>
+    <string name="name_placeholder">Jan Kowalski</string>
+    <string name="please_enable_location">Włącz usługi lokalizacji w ustawieniach urządzenia</string>
+    <string name="location_is_disabled_on_your_device">Lokalizacja jest wyłączona na urządzeniu</string>
+    <string name="steps_unit">kroków</string>
+    <string name="activity_title">Tytuł Aktywności</string>
+    <string name="distance">Distance</string>
+    <string name="calories_burned">Calories Burned</string>
+    <string name="start">Start</string>
+    <string name="avg_pace">Avg Pace</string>
+    <string name="calories">Calories</string>
+    <string name="calories_unit">Cal</string>
+    <string name="share">Share</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="navigation_tip">W tym miejscu aplikacja wyświetli przygotowaną trasę i rozpocznie pomiar aktywności fizycznej</string>
+    <string name="registration_tip">Tutaj aplikacja będzie śledzić i pokazywać aktywność użytkownika na mapie i rozpocznię mierzenie aktywności fizycznej.</string>
+</resources>

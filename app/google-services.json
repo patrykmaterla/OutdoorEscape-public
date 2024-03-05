@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "158918463249",
+    "project_id": "outdoorescape-ce52e",
+    "storage_bucket": "outdoorescape-ce52e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158918463249:android:6843b5aaebed74a1d8c6b0",
+        "android_client_info": {
+          "package_name": "com.example.outdoorescape"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "158918463249-1ugrfnp3ave4dtan1oguh4pmbq2bjf2r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.outdoorescape",
+            "certificate_hash": "350b1d4db7c6a4376ccfcadf271c440a96b4d907"
+          }
+        },
+        {
+          "client_id": "158918463249-s806430f4fja21g7q4m44vg9in41kboi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF49Cklu-_Nti4zLGyHWmB_24S825CStU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "158918463249-3rfgqduslk6blnmsujdgl9frt0o2mjhg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
