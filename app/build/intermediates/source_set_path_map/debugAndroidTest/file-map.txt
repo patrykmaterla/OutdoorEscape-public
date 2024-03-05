@@ -1,0 +1,6 @@
+com.example.outdoorescape.test.app-jetified-annotation-experimental-1.3.0-0 C:\Users\patryk\.gradle\caches\transforms-3\2a68b4e2242151fda0bafb819e8cb27c\transformed\jetified-annotation-experimental-1.3.0\res
+com.example.outdoorescape.test.app-jetified-core-1.5.0-1 C:\Users\patryk\.gradle\caches\transforms-3\a0845cea822e1ca8e4aa6b82ee0ac88b\transformed\jetified-core-1.5.0\res
+com.example.outdoorescape.test.app-androidTest-2 D:\Users\patryk\Projects\AndroidStudioProjects\_PersonalProjects\_backup\OutdoorEscape 05-03-2024\app\build\generated\res\resValues\androidTest\debug
+com.example.outdoorescape.test.app-mergeDebugAndroidTestResources-3 D:\Users\patryk\Projects\AndroidStudioProjects\_PersonalProjects\_backup\OutdoorEscape 05-03-2024\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.outdoorescape.test.app-mergeDebugAndroidTestResources-4 D:\Users\patryk\Projects\AndroidStudioProjects\_PersonalProjects\_backup\OutdoorEscape 05-03-2024\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.outdoorescape.test.app-merged_res-5 D:\Users\patryk\Projects\AndroidStudioProjects\_PersonalProjects\_backup\OutdoorEscape 05-03-2024\app\build\intermediates\merged_res\debugAndroidTest

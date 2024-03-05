@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- <PreferenceCategory android:title=""> -->
+    <!--     <Preference -->
+    <!--         app:fragment="com.example.outdoorescape.SettingsActivity$MessagesFragment" -->
+    <!--         app:icon="@drawable/messages" -->
+    <!--         app:key="messages_header" -->
+    <!--         app:title="@string/messages_header" /> -->
+
+    <!--     <Preference -->
+    <!--         app:fragment="com.example.outdoorescape.SettingsActivity$SyncFragment" -->
+    <!--         app:icon="@drawable/sync" -->
+    <!--         app:key="sync_header" -->
+    <!--         app:title="@string/sync_header" /> -->
+    <!-- </PreferenceCategory> -->
+
+    <Preference
+        app:key="about_description"
+        app:summary="@string/about_description"
+        />
+
+    <PreferenceCategory
+        android:title="">
+        <Preference
+            android:key="about_developer"
+            app:icon="@drawable/ic_developer"
+            app:title="@string/about_developer"
+            app:summary="@string/about_developer_name"/>
+
+        <Preference
+            app:icon="@drawable/ic_version"
+            app:key="about_version"
+            app:title="@string/about_version"
+            app:summary="1.0"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

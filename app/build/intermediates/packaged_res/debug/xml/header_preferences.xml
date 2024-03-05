@@ -1,0 +1,46 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- <PreferenceCategory android:title=""> -->
+    <!--     <Preference -->
+    <!--         app:fragment="com.example.outdoorescape.SettingsActivity$MessagesFragment" -->
+    <!--         app:icon="@drawable/messages" -->
+    <!--         app:key="messages_header" -->
+    <!--         app:title="@string/messages_header" /> -->
+
+    <!--     <Preference -->
+    <!--         app:fragment="com.example.outdoorescape.SettingsActivity$SyncFragment" -->
+    <!--         app:icon="@drawable/sync" -->
+    <!--         app:key="sync_header" -->
+    <!--         app:title="@string/sync_header" /> -->
+    <!-- </PreferenceCategory> -->
+
+        <Preference
+            app:fragment="com.example.outdoorescape.SettingsActivity$LanguageFragment"
+            app:icon="@drawable/ic_language"
+            app:key="language_header"
+            app:summary="@string/language_summary"
+            app:title="@string/language_header" />
+
+        <Preference
+            app:fragment="com.example.outdoorescape.SettingsActivity$FeedbackFragment"
+            app:icon="@drawable/ic_feedback"
+            app:key="feedback_header"
+            app:title="@string/feedback_header" />
+
+        <Preference
+            app:fragment="com.example.outdoorescape.SettingsActivity$AboutFragment"
+            app:icon="@drawable/ic_about"
+            app:key="about_header"
+            app:title="@string/about_header" />
+
+    <PreferenceCategory
+        android:title="">
+        <Preference
+            app:fragment="com.example.outdoorescape.SettingsActivity$LogoutFragment"
+            app:icon="@drawable/ic_logout"
+            app:key="logout_header"
+            app:title="@string/logout_header" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

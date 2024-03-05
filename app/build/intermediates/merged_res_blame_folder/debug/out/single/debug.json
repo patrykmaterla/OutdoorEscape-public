@@ -1,0 +1,1026 @@
+[
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable_ic_notifications_black_24dp.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable/ic_notifications_black_24dp.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/layout_fragment_sign_in.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_sign_in.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable_baseline_settings_24.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable/baseline_settings_24.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_ic_about.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/ic_about.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/layout_fragment_profile.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_ic_nav_registration.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/ic_nav_registration.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/layout_map_preview.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/layout/map_preview.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-anydpi_ic_language.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-anydpi/ic_language.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/layout_fragment_notifications.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_notifications.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_baseline_settings_white_48.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/baseline_settings_white_48.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-hdpi_ic_nav_discover.webp.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-hdpi/ic_nav_discover.webp"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_ic_developer.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/ic_developer.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-anydpi-v26_ic_nav_discover_round.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-anydpi-v26/ic_nav_discover_round.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/layout_fragment_sign_up.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_sign_up.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable_ic_toggle_bg.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable/ic_toggle_bg.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_ic_toggle_save2.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/ic_toggle_save2.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_ic_activity_running.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/ic_activity_running.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-anydpi_ic_activity_nordic_walking.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-anydpi/ic_activity_nordic_walking.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-mdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-anydpi_ic_nav_discover.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-anydpi/ic_nav_discover.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-mdpi_ic_nav_discover_foreground.webp.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-mdpi/ic_nav_discover_foreground.webp"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_baseline_settings_white_36.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/baseline_settings_white_36.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_ic_nav_navigation.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/ic_nav_navigation.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_ic_activity_nordic_walking.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/ic_activity_nordic_walking.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_ic_arrow_right.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/ic_arrow_right.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-xhdpi_ic_nav_discover_round.webp.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-xhdpi/ic_nav_discover_round.webp"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_ic_activity_walking.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/ic_activity_walking.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_ic_back.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/ic_back.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_ic_nav_profile.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/ic_nav_profile.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_ic_nav_navigation.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/ic_nav_navigation.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/layout_item_saved_trail.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/layout/item_saved_trail.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_ic_nav_discover.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/ic_nav_discover.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_baseline_settings_white_48.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/baseline_settings_white_48.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-hdpi_ic_hill.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-hdpi/ic_hill.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-anydpi_ic_activity_walking.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-anydpi/ic_activity_walking.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxxhdpi_baseline_settings_white_36.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxxhdpi/baseline_settings_white_36.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-anydpi_ic_version.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-anydpi/ic_version.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_baseline_settings_white_18.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/baseline_settings_white_18.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-xhdpi_ic_nav_discover.webp.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-xhdpi/ic_nav_discover.webp"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_ic_save.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/ic_save.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-hdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxxhdpi_baseline_settings_white_20.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxxhdpi/baseline_settings_white_20.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/xml_header_preferences.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/xml/header_preferences.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_ic_toggle_save2.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/ic_toggle_save2.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_ic_activity_running.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/ic_activity_running.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-anydpi_ic_browse_activities.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-anydpi/ic_browse_activities.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-anydpi_ic_nav_navigation.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-anydpi/ic_nav_navigation.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_ic_nav_creation.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/ic_nav_creation.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/layout_fragment_discover.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_discover.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_ic_activity_running.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/ic_activity_running.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-xxxhdpi_ic_nav_discover.webp.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-xxxhdpi/ic_nav_discover.webp"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/xml_sync_preferences.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/xml/sync_preferences.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-xxhdpi_ic_nav_discover_foreground.webp.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-xxhdpi/ic_nav_discover_foreground.webp"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_ic_saved_trails.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/ic_saved_trails.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-xxxhdpi_ic_nav_discover_round.webp.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-xxxhdpi/ic_nav_discover_round.webp"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_ic_version.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/ic_version.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_ic_logout.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/ic_logout.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_ic_share.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/ic_share.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_baseline_settings_white_36.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/baseline_settings_white_36.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_ic_toggle_save1.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/ic_toggle_save1.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-anydpi_ic_fab_navigation.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-anydpi/ic_fab_navigation.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_ic_stop.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/ic_stop.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_ic_fab_navigation.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/ic_fab_navigation.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-anydpi_ic_mountain.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-anydpi/ic_mountain.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_ic_toggle_save2.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/ic_toggle_save2.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable_ic_dashboard_black_24dp.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable/ic_dashboard_black_24dp.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable_background_corners.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable/background_corners.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_ic_nav_discover.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/ic_nav_discover.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable_search_view.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable/search_view.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_ic_share.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/ic_share.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable_ic_home_black_24dp.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable/ic_home_black_24dp.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_ic_browse_activities.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/ic_browse_activities.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_ic_feedback.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/ic_feedback.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_baseline_settings_white_36.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/baseline_settings_white_36.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_ic_back.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/ic_back.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_ic_developer.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/ic_developer.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_ic_nav_navigation.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/ic_nav_navigation.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_ic_logout.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/ic_logout.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_ic_toggle_save1.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/ic_toggle_save1.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxxhdpi_baseline_settings_white_48.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxxhdpi/baseline_settings_white_48.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_ic_nav_profile.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/ic_nav_profile.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/layout_item_activity.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/layout/item_activity.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_ic_save.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/ic_save.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-anydpi_ic_toggle_save2.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-anydpi/ic_toggle_save2.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_ic_cloud.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/ic_cloud.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_ic_save.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/ic_save.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_ic_stop.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/ic_stop.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_ic_saved_trails.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/ic_saved_trails.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/layout_fragment_dashboard.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_dashboard.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_ic_activity_walking.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/ic_activity_walking.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_ic_cloud.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/ic_cloud.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/navigation_mobile_navigation.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/navigation/mobile_navigation.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_ic_browse_activities.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/ic_browse_activities.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_ic_back.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/ic_back.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_ic_start.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/ic_start.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-anydpi_ic_share.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-anydpi/ic_share.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_baseline_settings_white_24.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/baseline_settings_white_24.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_baseline_settings_white_36.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/baseline_settings_white_36.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_baseline_settings_white_24.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/baseline_settings_white_24.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-xhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-anydpi_ic_cloud.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-anydpi/ic_cloud.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/layout_activity_dashboard.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-hdpi_ic_nav_discover_round.webp.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-hdpi/ic_nav_discover_round.webp"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_ic_arrow_right.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/ic_arrow_right.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-anydpi_ic_nav_creation.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-anydpi/ic_nav_creation.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxxhdpi_baseline_settings_white_24.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxxhdpi/baseline_settings_white_24.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/layout_fragment_home.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-anydpi_ic_arrow_right.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-anydpi/ic_arrow_right.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/layout_fragment_maps.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_maps.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/layout_fragment_trail.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_trail.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_ic_nav_registration.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/ic_nav_registration.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_ic_about.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/ic_about.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_baseline_settings_white_24.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/baseline_settings_white_24.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/xml_messages_preferences.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/xml/messages_preferences.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/layout_fragment_saved_trails.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_saved_trails.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable_btn_start_background.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable/btn_start_background.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-anydpi-v26_ic_nav_discover.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-anydpi-v26/ic_nav_discover.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable_circle.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable/circle.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_ic_nav_creation.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/ic_nav_creation.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_ic_save.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/ic_save.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/xml_logout_preferences.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/xml/logout_preferences.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-anydpi_ic_nav_registration.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-anydpi/ic_nav_registration.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_ic_fab_navigation.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/ic_fab_navigation.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_ic_language.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/ic_language.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-mdpi_ic_nav_discover_round.webp.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-mdpi/ic_nav_discover_round.webp"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_baseline_settings_white_24.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/baseline_settings_white_24.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_ic_activity_nordic_walking.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/ic_activity_nordic_walking.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_baseline_settings_white_18.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/baseline_settings_white_18.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-xxxhdpi_ic_nav_discover_foreground.webp.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-xxxhdpi/ic_nav_discover_foreground.webp"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable_gradient_black.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable/gradient_black.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-anydpi_ic_toggle_save1.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-anydpi/ic_toggle_save1.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_ic_saved_trails.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/ic_saved_trails.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_ic_language.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/ic_language.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_baseline_settings_white_48.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/baseline_settings_white_48.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/xml_feedback_preferences.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/xml/feedback_preferences.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable_empty_circle.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable/empty_circle.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_ic_language.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/ic_language.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_ic_back.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/ic_back.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_ic_arrow_right.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/ic_arrow_right.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/layout_item_discover.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/layout/item_discover.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_ic_mountain.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/ic_mountain.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_baseline_settings_white_18.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/baseline_settings_white_18.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_ic_start.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/ic_start.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/xml_backup_rules.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_ic_language.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/ic_language.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_ic_arrow_right.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/ic_arrow_right.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_ic_toggle_save1.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/ic_toggle_save1.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/xml_about_preferences.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/xml/about_preferences.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-anydpi_ic_activity_running.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-anydpi/ic_activity_running.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxxhdpi_baseline_settings_white_18.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxxhdpi/baseline_settings_white_18.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/layout_fragment_registration.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_registration.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-anydpi_ic_start.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-anydpi/ic_start.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_ic_saved_trails.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/ic_saved_trails.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_baseline_settings_white_20.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/baseline_settings_white_20.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-xhdpi_ic_nav_discover_foreground.webp.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-xhdpi/ic_nav_discover_foreground.webp"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_ic_cloud.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/ic_cloud.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_ic_share.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/ic_share.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_ic_activity_nordic_walking.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/ic_activity_nordic_walking.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_ic_version.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/ic_version.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable_messages.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable/messages.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_ic_nav_creation.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/ic_nav_creation.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_baseline_settings_white_18.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/baseline_settings_white_18.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_baseline_settings_white_20.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/baseline_settings_white_20.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-anydpi_ic_saved_trails.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-anydpi/ic_saved_trails.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_ic_start.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/ic_start.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-anydpi_ic_back.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-anydpi/ic_back.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_ic_browse_activities.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/ic_browse_activities.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_ic_stop.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/ic_stop.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_ic_version.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/ic_version.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_ic_version.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/ic_version.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-anydpi_ic_feedback.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-anydpi/ic_feedback.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_ic_toggle_save1.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/ic_toggle_save1.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/layout_fragment_creation.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_creation.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_ic_fab_navigation.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/ic_fab_navigation.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_ic_logout.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/ic_logout.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_baseline_settings_white_20.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/baseline_settings_white_20.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_ic_cloud.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/ic_cloud.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable_sync.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable/sync.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_ic_activity_nordic_walking.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/ic_activity_nordic_walking.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-anydpi_ic_logout.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-anydpi/ic_logout.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable_ic_toggle.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable/ic_toggle.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_ic_nav_registration.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/ic_nav_registration.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/layout_settings_activity.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/layout/settings_activity.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_ic_nav_discover.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/ic_nav_discover.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_ic_mountain.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/ic_mountain.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_ic_about.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/ic_about.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_ic_developer.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/ic_developer.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/layout_fragment_browse_activities.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_browse_activities.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/layout_activity_auth.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/layout/activity_auth.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-mdpi_ic_nav_discover.webp.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-mdpi/ic_nav_discover.webp"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-mdpi_ic_hill.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-mdpi/ic_hill.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-anydpi_ic_nav_profile.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-anydpi/ic_nav_profile.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_ic_mountain.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/ic_mountain.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-anydpi_ic_save.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-anydpi/ic_save.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_baseline_settings_white_48.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/baseline_settings_white_48.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-hdpi_ic_nav_discover_foreground.webp.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-hdpi/ic_nav_discover_foreground.webp"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/layout_fragment_navigation.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_navigation.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable_map.jpg.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable/map.jpg"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-xxxhdpi_ic_hill.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-xxxhdpi/ic_hill.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/layout_activity_main.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable_rounded_corners.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable/rounded_corners.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-xhdpi_ic_hill.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-xhdpi/ic_hill.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-xxhdpi_ic_nav_discover.webp.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-xxhdpi/ic_nav_discover.webp"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_ic_developer.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/ic_developer.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_ic_stop.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/ic_stop.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-anydpi_ic_about.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-anydpi/ic_about.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_ic_nav_profile.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/ic_nav_profile.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/xml_language_preferences.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/xml/language_preferences.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_ic_feedback.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/ic_feedback.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_ic_start.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/ic_start.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable_btn_toggle_save.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable/btn_toggle_save.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_ic_nav_profile.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/ic_nav_profile.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-anydpi_ic_developer.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-anydpi/ic_developer.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_ic_activity_walking.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/ic_activity_walking.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-xxhdpi_ic_nav_discover_round.webp.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-xxhdpi/ic_nav_discover_round.webp"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_ic_activity_walking.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/ic_activity_walking.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_baseline_settings_white_20.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/baseline_settings_white_20.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xxhdpi_ic_feedback.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xxhdpi/ic_feedback.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/layout_card_view_design.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/layout/card_view_design.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable_rounded_background_with_shadow.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable/rounded_background_with_shadow.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_ic_share.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/ic_share.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_ic_fab_navigation.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/ic_fab_navigation.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/layout_fragment_welcome.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_welcome.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-anydpi_ic_stop.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-anydpi/ic_stop.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_ic_logout.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/ic_logout.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_ic_about.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/ic_about.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_ic_feedback.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/ic_feedback.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_ic_nav_creation.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/ic_nav_creation.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/mipmap-xxhdpi_ic_hill.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/mipmap-xxhdpi/ic_hill.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_ic_mountain.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/ic_mountain.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/layout_fragment_activity.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_activity.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_ic_browse_activities.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/ic_browse_activities.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_ic_nav_navigation.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/ic_nav_navigation.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable_baseline_settings_20.xml.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable/baseline_settings_20.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_ic_nav_registration.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/ic_nav_registration.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-mdpi_ic_toggle_save2.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-mdpi/ic_toggle_save2.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-xhdpi_ic_nav_discover.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-xhdpi/ic_nav_discover.png"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-merged_res-62:/drawable-hdpi_ic_activity_running.png.flat",
+        "source": "com.example.outdoorescape.app-main-64:/drawable-hdpi/ic_activity_running.png"
+    }
+]
