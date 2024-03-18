@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="reply_entries">
+        <item>Reply</item>
+        <item>Reply to all</item>
+    </string-array>
+    <string-array name="reply_values">
+        <item>reply</item>
+        <item>reply_all</item>
+    </string-array>
+    <color name="ProfilePink">#FFBB86FC</color>
+    <color name="black">#FF000000</color>
+    <color name="btnBack">#757575</color>
+    <color name="fabSave">#FFFFFF</color>
+    <color name="green">#019f35</color>
+    <color name="ic_launcher_background">#6200EE</color>
+    <color name="ic_nav_discover_background">#94BD90</color>
+    <color name="primary">#FFFFFF</color>
+    <color name="primary2">#FFFFFF</color>
+    <color name="primary_dark">#ff212121</color>
+    <color name="primary_purple">#FFBB86FC</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="red">#f75157</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="about_description">An application to manage the user\'s routes and physical activities. Allows you to track the user\'s physical activity as well as manage and create routes for the user to follow.</string>
+    <string name="about_developer">Developer</string>
+    <string name="about_developer_name">Patryk Materla</string>
+    <string name="about_header">About</string>
+    <string name="about_version">Version</string>
+    <string name="activity_title">Activity Title</string>
+    <string name="app_description">Your activity tracker and insights</string>
+    <string name="app_name">OutdoorEscape</string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="avg_pace">Avg Pace</string>
+    <string name="back_button">Back</string>
+    <string name="browse_activities">Browse Activities</string>
+    <string name="browse_activities_description">History of user\'s physical activities in the application</string>
+    <string name="browse_activities_fragment">Browse Activities</string>
+    <string name="calories">Calories</string>
+    <string name="calories_burned">Calories Burned</string>
+    <string name="calories_unit">Cal</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="default_web_client_id" translatable="false">158918463249-s806430f4fja21g7q4m44vg9in41kboi.apps.googleusercontent.com</string>
+    <string name="description">Description</string>
+    <string name="discover_description">Find routes for your activities</string>
+    <string name="discover_title">Discover</string>
+    <string name="discover_trail_description">Short and brief description of the route</string>
+    <string name="discover_trail_title">Trail</string>
+    <string name="distance">Distance</string>
+    <string name="duration">Duration</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="end_time">End Time</string>
+    <string name="english">English</string>
+    <string name="feedback_header">Feedback</string>
+    <string name="first_name">First Name</string>
+    <string name="gcm_defaultSenderId" translatable="false">158918463249</string>
+    <string name="google_api_key" translatable="false">AIzaSyBF49Cklu-_Nti4zLGyHWmB_24S825CStU</string>
+    <string name="google_app_id" translatable="false">1:158918463249:android:6843b5aaebed74a1d8c6b0</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBF49Cklu-_Nti4zLGyHWmB_24S825CStU</string>
+    <string name="google_sign_in">SIGN IN</string>
+    <string name="google_sign_up">SIGN UP</string>
+    <string name="google_storage_bucket" translatable="false">outdoorescape-ce52e.appspot.com</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="language_header">Language</string>
+    <string name="language_summary">English</string>
+    <string name="last_name">Last Name</string>
+    <string name="location_is_disabled_on_your_device">Location is disabled on your device</string>
+    <string name="location_permission_denied">This sample requires location permission to enable the \'my location\' layer. Please try again and grant access to use the location.\nIf the permission has been permanently denied, it can be enabled from the System Settings > Apps > \'Google Maps API Demos\'.</string>
+    <string name="login_description">Enter your credentials</string>
+    <string name="logout_header">Log Out</string>
+    <string name="messages_header">Messages</string>
+    <string name="name_placeholder">Your Name</string>
+    <string name="navigation_tip">Here the app will show directions for the prepared route and start measuring physical activity</string>
+    <string name="no_account"><u>Continue without an account</u></string>
+    <string name="password">Password</string>
+    <string name="permission_rationale_location">Access to the location service is required to demonstrate the \'my location\' feature, which shows your current location on the map.</string>
+    <string name="permission_required_toast">Location permission is required for this demo.</string>
+    <string name="please_enable_location">Please enable location services in your device settings</string>
+    <string name="polish">Polish</string>
+    <string name="profile_description">Short description of the user interests and favorites activities</string>
+    <string name="project_id" translatable="false">outdoorescape-ce52e</string>
+    <string name="register_description">Create new account</string>
+    <string name="registration_tip">Here the app will track and show the user\'s activity on the map and start measuring physical activity</string>
+    <string name="reply_title">Default reply action</string>
+    <string name="save">Save</string>
+    <string name="saved_trails">Saved Trails</string>
+    <string name="saved_trails_description">Trails saved by the user are stored here</string>
+    <string name="saved_trails_fragment">Saved Trails</string>
+    <string name="selected_language">English</string>
+    <string name="share">Share</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_in_title">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_up_title">Sign Up</string>
+    <string name="signature_title">Your signature</string>
+    <string name="start">Start</string>
+    <string name="start_activity">Start activity</string>
+    <string name="start_time">Start Time</string>
+    <string name="steps">Steps</string>
+    <string name="steps_unit">steps</string>
+    <string name="stop_activity">Stop activity</string>
+    <string name="sync_header">Sync</string>
+    <string name="sync_title">Sync email periodically</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_creation">Creation</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_discover">Discover</string>
+    <string name="title_home">Home</string>
+    <string name="title_navigation">Directions</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_registration">Registration</string>
+    <string name="web_client_id" translatable="false">158918463249-s806430f4fja21g7q4m44vg9in41kboi.apps.googleusercontent.com</string>
+    <style name="Theme.OutdoorEscape" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+
+        <item name="android:windowTranslucentStatus">
+            false
+        </item>
+
+        <item name="android:statusBarColor">
+            @android:color/transparent
+        </item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        
+    </style>
+    <style name="Widget.Button.Toggle" parent="android:Widget">
+        <item name="android:background">@drawable/ic_toggle_bg</item>
+        <item name="android:disabledAlpha">?android:attr/disabledAlpha</item>
+    </style>
+    <style name="toggleButton" parent="Theme.AppCompat.DayNight">
+        <item name="android:buttonStyleToggle">@style/Widget.Button.Toggle</item>
+        <item name="android:textOn"/>
+        <item name="android:textOff"/>
+    </style>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">158918463249-s806430f4fja21g7q4m44vg9in41kboi.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">158918463249</string>
+    <string name="google_api_key" translatable="false">AIzaSyBF49Cklu-_Nti4zLGyHWmB_24S825CStU</string>
+    <string name="google_app_id" translatable="false">1:158918463249:android:6843b5aaebed74a1d8c6b0</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBF49Cklu-_Nti4zLGyHWmB_24S825CStU</string>
+    <string name="google_storage_bucket" translatable="false">outdoorescape-ce52e.appspot.com</string>
+    <string name="project_id" translatable="false">outdoorescape-ce52e</string>
+</resources>
