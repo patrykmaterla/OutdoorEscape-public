@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrailFragment">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:src="@drawable/ic_fab_navigation"
+        app:backgroundTint="@color/fabSave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/purple_200" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".TrailFragment">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="325dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/map"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- <ImageView -->
+            <!--     android:id="@+id/ivGradient" -->
+            <!--     android:layout_width="match_parent" -->
+            <!--     android:layout_height="300dp" -->
+            <!--     android:scaleType="centerCrop" -->
+            <!--     android:src="@drawable/gradient_black" -->
+            <!--     android:alpha="0" -->
+            <!--     app:layout_constraintEnd_toEndOf="parent" -->
+            <!--     app:layout_constraintStart_toStartOf="parent" -->
+            <!--     app:layout_constraintTop_toTopOf="parent" /> -->
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Trail page"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:justificationMode="inter_word"
+                android:text="Some descripition that describes this page and tell user what he can expect from this route. It can be long or short."
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <!-- <TextView
+            <!-             android:id="@+id/tvTrailDescription" -->
+            <!--             android:layout_width="0dp" -->
+            <!--             android:layout_height="wrap_content" -->
+            <!--             android:layout_marginStart="8dp" -->
+            <!--             android:layout_marginTop="8dp" -->
+            <!--             android:layout_marginEnd="8dp" -->
+            <!--             android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text." -->
+            <!--             android:textSize="16sp" -->
+            <!--             app:layout_constraintEnd_toEndOf="parent" -->
+            <!--             app:layout_constraintStart_toEndOf="@+id/tvTrailDescriptionIcon" -->
+            <!--             app:layout_constraintTop_toTopOf="parent" />
+
+            <!- <TextView -->
+            <!--     android:id="@+id/tvTrailDescription" -->
+            <!--     android:layout_width="wrap_content" -->
+            <!--     android:layout_height="wrap_content" -->
+            <!--     android:layout_marginTop="-8dp" -->
+            <!--     android:text="Description of the trail that describes this trail and all the traily things" -->
+            <!--     app:layout_constraintStart_toStartOf="@+id/textView2" -->
+            <!--     app:layout_constraintTop_toBottomOf="@+id/textView2" /> -->
+
+            <TextView
+                android:id="@+id/tvArea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Area"
+                android:layout_marginStart="4dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/tvAreaValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Katowice"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/tvArea"
+                app:layout_constraintStart_toStartOf="@id/tvArea" />
+
+            <TextView
+                android:id="@+id/tvDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="4dp"
+                android:text="Distance"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@id/tvAreaValue" />
+
+            <TextView
+                android:id="@+id/tvDistanceValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6.76"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/tvDistance"
+                app:layout_constraintTop_toBottomOf="@id/tvDistance" />
+
+            <TextView
+                android:id="@+id/tvDistanceUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="km"
+                android:textSize="15sp"
+                android:layout_marginStart="4dp"
+                app:layout_constraintStart_toEndOf="@id/tvDistanceValue"
+                app:layout_constraintTop_toTopOf="@+id/tvDistanceValue" />
+
+            <TextView
+                android:id="@+id/tvDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="4dp"
+                android:text="Duration"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@id/tvDistanceValue" />
+
+            <TextView
+                android:id="@+id/tvDurationValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:47:57"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/tvDuration"
+                app:layout_constraintTop_toBottomOf="@id/tvDuration" />
+
+            <TextView
+                android:id="@+id/tvRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="4dp"
+                android:text="Rating"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@id/tvDurationValue" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="-2dp"
+                android:progressTint="@color/purple_200"
+                android:progressBackgroundTint="@color/primary_dark"
+                android:secondaryProgressTint="@color/purple_500"
+                android:rating="3.5"
+                app:layout_constraintStart_toStartOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/tvRating" />
+
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/imageButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="-24dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/circle"
+                android:backgroundTint="@color/purple_200"
+                app:backgroundTint="@color/purple_200"
+                android:src="@drawable/ic_share"
+                app:icon="@drawable/ic_share"
+                app:iconTint="@color/white"
+                android:clickable="true"
+                android:padding="12dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView1"
+                app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+
+            <!-- <ToggleButton -->
+            <!--     android:id="@+id/toggleButton" -->
+            <!--     android:layout_width="48dp" -->
+            <!--     android:layout_height="48dp" -->
+            <!--     android:layout_marginEnd="16dp" -->
+            <!--     android:background="@drawable/circle" -->
+            <!--     android:backgroundTint="@color/fabSave" -->
+            <!--     android:button="@drawable/ic_developer" -->
+            <!--     android:textOff="" -->
+            <!--     android:text="ToggleButton" -->
+            <!--     app:layout_constraintEnd_toStartOf="@+id/imageButton" -->
+            <!--     app:layout_constraintTop_toTopOf="@+id/imageButton" /> -->
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnToggleSave"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/circle"
+                android:checkable="true"
+                android:padding="12dp"
+                app:backgroundTint="@color/white"
+                app:icon="@drawable/ic_toggle_save1"
+                app:iconTint="@color/purple_200"
+                android:clickable="true"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/imageButton"
+                app:layout_constraintTop_toTopOf="@+id/imageButton" />
+
+            <!-- <androidx.cardview.widget.CardView -->
+            <!--     android:id="@+id/cvDescription" -->
+            <!--     android:layout_width="0dp" -->
+            <!--     android:layout_height="96dp" -->
+            <!--     android:layout_marginTop="16dp" -->
+            <!--     android:layout_marginStart="8dp" -->
+            <!--     android:layout_marginEnd="8dp" -->
+            <!--     android:minHeight="100dp" -->
+            <!--     app:cardBackgroundColor="@color/white" -->
+            <!--     app:cardCornerRadius="4dp" -->
+            <!--     app:cardElevation="4dp" -->
+            <!--     app:layout_constraintEnd_toEndOf="parent" -->
+            <!--     app:layout_constraintStart_toStartOf="parent" -->
+            <!--     app:layout_constraintTop_toBottomOf="@+id/textView2"> -->
+
+
+            <!--     <androidx.constraintlayout.widget.ConstraintLayout -->
+            <!--         android:layout_width="match_parent" -->
+            <!--         android:layout_height="match_parent" -->
+            <!--         tools:context=".TrailFragment"> -->
+
+            <!--         <TextView -->
+            <!--             android:id="@+id/tvTrailDescriptionIcon" -->
+            <!--             android:layout_width="wrap_content" -->
+            <!--             android:layout_height="wrap_content" -->
+            <!--             android:text="📄" -->
+            <!--             android:textSize="16sp" -->
+            <!--             android:layout_marginStart="8dp" -->
+            <!--             android:layout_marginTop="10dp" -->
+            <!--             app:layout_constraintStart_toStartOf="parent" -->
+            <!--             app:layout_constraintTop_toTopOf="parent" /> -->
+
+            <!--         <TextView -->
+            <!--             android:id="@+id/tvTrailDescription" -->
+            <!--             android:layout_width="0dp" -->
+            <!--             android:layout_height="wrap_content" -->
+            <!--             android:layout_marginStart="8dp" -->
+            <!--             android:layout_marginTop="8dp" -->
+            <!--             android:layout_marginEnd="8dp" -->
+            <!--             android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text." -->
+            <!--             android:textSize="16sp" -->
+            <!--             app:layout_constraintEnd_toEndOf="parent" -->
+            <!--             app:layout_constraintStart_toEndOf="@+id/tvTrailDescriptionIcon" -->
+            <!--             app:layout_constraintTop_toTopOf="parent" /> -->
+
+            <!--     </androidx.constraintlayout.widget.ConstraintLayout> -->
+
+
+
+            <!-- </androidx.cardview.widget.CardView> -->
+
+            <!-- <androidx.cardview.widget.CardView -->
+            <!--     android:layout_width="0dp" -->
+            <!--     android:layout_height="96dp" -->
+            <!--     android:layout_marginStart="8dp" -->
+            <!--     android:layout_marginTop="16dp" -->
+            <!--     android:layout_marginEnd="8dp" -->
+            <!--     android:minHeight="100dp" -->
+            <!--     app:cardBackgroundColor="@color/white" -->
+            <!--     app:cardCornerRadius="4dp" -->
+            <!--     app:cardElevation="4dp" -->
+            <!--     app:layout_constraintEnd_toEndOf="parent" -->
+            <!--     app:layout_constraintStart_toStartOf="parent" -->
+            <!--     app:layout_constraintTop_toBottomOf="@+id/cvDescription"> -->
+
+            <!--     <TextView -->
+            <!--         android:layout_width="wrap_content" -->
+            <!--         android:layout_height="wrap_content" -->
+            <!--         android:layout_marginStart="8dp" -->
+            <!--         android:layout_marginTop="8dp" -->
+            <!--         android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." -->
+            <!--         android:textSize="16sp" /> -->
+
+            <!-- </androidx.cardview.widget.CardView> -->
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

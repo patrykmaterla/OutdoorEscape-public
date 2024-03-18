@@ -1,110 +1,106 @@
 [
     {
-        "merged": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-mergeDebugResources-61:\\layout\\fragment_notifications.xml",
-        "source": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-main-64:\\layout\\fragment_notifications.xml"
+        "merged": "com.example.outdoorescape.app-mergeDebugResources-61:/layout/item_activity.xml",
+        "source": "com.example.outdoorescape.app-main-64:/layout/item_activity.xml"
     },
     {
-        "merged": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-mergeDebugResources-61:\\layout\\fragment_profile.xml",
-        "source": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-main-64:\\layout\\fragment_profile.xml"
+        "merged": "com.example.outdoorescape.app-mergeDebugResources-61:/layout/fragment_trail.xml",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_trail.xml"
     },
     {
-        "merged": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-mergeDebugResources-61:\\layout\\fragment_browse_activities.xml",
-        "source": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-main-64:\\layout\\fragment_browse_activities.xml"
+        "merged": "com.example.outdoorescape.app-mergeDebugResources-61:/layout/settings_activity.xml",
+        "source": "com.example.outdoorescape.app-main-64:/layout/settings_activity.xml"
     },
     {
-        "merged": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-mergeDebugResources-61:\\layout\\fragment_sign_in.xml",
-        "source": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-main-64:\\layout\\fragment_sign_in.xml"
+        "merged": "com.example.outdoorescape.app-mergeDebugResources-61:/layout/card_view_design.xml",
+        "source": "com.example.outdoorescape.app-main-64:/layout/card_view_design.xml"
     },
     {
-        "merged": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-mergeDebugResources-61:\\layout\\fragment_navigation.xml",
-        "source": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-main-64:\\layout\\fragment_navigation.xml"
+        "merged": "com.example.outdoorescape.app-mergeDebugResources-61:/layout/activity_main.xml",
+        "source": "com.example.outdoorescape.app-main-64:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-mergeDebugResources-61:\\layout\\fragment_creation.xml",
-        "source": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-main-64:\\layout\\fragment_creation.xml"
+        "merged": "com.example.outdoorescape.app-mergeDebugResources-61:/layout/fragment_maps.xml",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_maps.xml"
     },
     {
-        "merged": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-mergeDebugResources-61:\\layout\\fragment_profile_edit.xml",
-        "source": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-main-64:\\layout\\fragment_profile_edit.xml"
+        "merged": "com.example.outdoorescape.app-mergeDebugResources-61:/layout/fragment_navigation.xml",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_navigation.xml"
     },
     {
-        "merged": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-mergeDebugResources-61:\\layout\\map_preview.xml",
-        "source": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-main-64:\\layout\\map_preview.xml"
+        "merged": "com.example.outdoorescape.app-mergeDebugResources-61:/layout/activity_dashboard.xml",
+        "source": "com.example.outdoorescape.app-main-64:/layout/activity_dashboard.xml"
     },
     {
-        "merged": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-mergeDebugResources-61:\\layout\\fragment_maps.xml",
-        "source": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-main-64:\\layout\\fragment_maps.xml"
+        "merged": "com.example.outdoorescape.app-mergeDebugResources-61:/layout/fragment_notifications.xml",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_notifications.xml"
     },
     {
-        "merged": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-mergeDebugResources-61:\\layout\\activity_auth.xml",
-        "source": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-main-64:\\layout\\activity_auth.xml"
+        "merged": "com.example.outdoorescape.app-mergeDebugResources-61:/layout/item_saved_trail.xml",
+        "source": "com.example.outdoorescape.app-main-64:/layout/item_saved_trail.xml"
     },
     {
-        "merged": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-mergeDebugResources-61:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-main-64:\\layout\\activity_main.xml"
+        "merged": "com.example.outdoorescape.app-mergeDebugResources-61:/layout/fragment_registration.xml",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_registration.xml"
     },
     {
-        "merged": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-mergeDebugResources-61:\\layout\\card_view_design.xml",
-        "source": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-main-64:\\layout\\card_view_design.xml"
+        "merged": "com.example.outdoorescape.app-mergeDebugResources-61:/layout/item_discover.xml",
+        "source": "com.example.outdoorescape.app-main-64:/layout/item_discover.xml"
     },
     {
-        "merged": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-mergeDebugResources-61:\\layout\\settings_activity.xml",
-        "source": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-main-64:\\layout\\settings_activity.xml"
+        "merged": "com.example.outdoorescape.app-mergeDebugResources-61:/layout/fragment_welcome.xml",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_welcome.xml"
     },
     {
-        "merged": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-mergeDebugResources-61:\\layout\\fragment_discover.xml",
-        "source": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-main-64:\\layout\\fragment_discover.xml"
+        "merged": "com.example.outdoorescape.app-mergeDebugResources-61:/layout/activity_auth.xml",
+        "source": "com.example.outdoorescape.app-main-64:/layout/activity_auth.xml"
     },
     {
-        "merged": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-mergeDebugResources-61:\\layout\\fragment_sign_up.xml",
-        "source": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-main-64:\\layout\\fragment_sign_up.xml"
+        "merged": "com.example.outdoorescape.app-mergeDebugResources-61:/layout/fragment_discover.xml",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_discover.xml"
     },
     {
-        "merged": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-mergeDebugResources-61:\\layout\\fragment_dashboard.xml",
-        "source": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-main-64:\\layout\\fragment_dashboard.xml"
+        "merged": "com.example.outdoorescape.app-mergeDebugResources-61:/layout/fragment_browse_activities.xml",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_browse_activities.xml"
     },
     {
-        "merged": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-mergeDebugResources-61:\\layout\\item_discover.xml",
-        "source": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-main-64:\\layout\\item_discover.xml"
+        "merged": "com.example.outdoorescape.app-mergeDebugResources-61:/layout/fragment_saved_trails.xml",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_saved_trails.xml"
     },
     {
-        "merged": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-mergeDebugResources-61:\\layout\\item_saved_trail.xml",
-        "source": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-main-64:\\layout\\item_saved_trail.xml"
+        "merged": "com.example.outdoorescape.app-mergeDebugResources-61:/layout/fragment_activity.xml",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_activity.xml"
     },
     {
-        "merged": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-mergeDebugResources-61:\\layout\\activity_dashboard.xml",
-        "source": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-main-64:\\layout\\activity_dashboard.xml"
+        "merged": "com.example.outdoorescape.app-mergeDebugResources-61:/layout/fragment_creation.xml",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_creation.xml"
     },
     {
-        "merged": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-mergeDebugResources-61:\\layout\\fragment_trail.xml",
-        "source": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-main-64:\\layout\\fragment_trail.xml"
+        "merged": "com.example.outdoorescape.app-mergeDebugResources-61:/layout/fragment_dashboard.xml",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_dashboard.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-mergeDebugResources-61:/layout/fragment_sign_up.xml",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_sign_up.xml"
+    },
+    {
+        "merged": "com.example.outdoorescape.app-mergeDebugResources-61:/layout/fragment_home.xml",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_home.xml"
     },
     {
         "merged": "com.example.outdoorescape.app-mergeDebugResources-61:/layout/fragment_profile_edit.xml",
         "source": "com.example.outdoorescape.app-main-64:/layout/fragment_profile_edit.xml"
     },
     {
-        "merged": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-mergeDebugResources-61:\\layout\\fragment_welcome.xml",
-        "source": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-main-64:\\layout\\fragment_welcome.xml"
+        "merged": "com.example.outdoorescape.app-mergeDebugResources-61:/layout/map_preview.xml",
+        "source": "com.example.outdoorescape.app-main-64:/layout/map_preview.xml"
     },
     {
-        "merged": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-mergeDebugResources-61:\\layout\\item_activity.xml",
-        "source": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-main-64:\\layout\\item_activity.xml"
+        "merged": "com.example.outdoorescape.app-mergeDebugResources-61:/layout/fragment_profile.xml",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_profile.xml"
     },
     {
-        "merged": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-mergeDebugResources-61:\\layout\\fragment_registration.xml",
-        "source": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-main-64:\\layout\\fragment_registration.xml"
-    },
-    {
-        "merged": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-mergeDebugResources-61:\\layout\\fragment_activity.xml",
-        "source": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-main-64:\\layout\\fragment_activity.xml"
-    },
-    {
-        "merged": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-mergeDebugResources-61:\\layout\\fragment_saved_trails.xml",
-        "source": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-main-64:\\layout\\fragment_saved_trails.xml"
-    },
-    {
-        "merged": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-mergeDebugResources-61:\\layout\\fragment_home.xml",
-        "source": "C:\\Users\\patryk\\.gradle\\daemon\\8.0\\com.example.outdoorescape.app-main-64:\\layout\\fragment_home.xml"
+        "merged": "com.example.outdoorescape.app-mergeDebugResources-61:/layout/fragment_sign_in.xml",
+        "source": "com.example.outdoorescape.app-main-64:/layout/fragment_sign_in.xml"
     }
 ]
