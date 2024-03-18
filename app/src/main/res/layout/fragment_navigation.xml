@@ -18,115 +18,41 @@
     <!--     app:layout_constraintTop_toTopOf="parent" /> -->
 
     <fragment
-        android:id="@+id/map"
+        android:id="@+id/navigationMap"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/clStats"
+        android:layout_marginBottom="-32dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnNavigationStart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:context=".MapsFragment"
         tools:layout="@layout/map_preview" />
 
-    <!-- <LinearLayout -->
-    <!--     android:id="@+id/linearLayout" -->
-    <!--     android:layout_width="wrap_content" -->
-    <!--     android:layout_height="wrap_content" -->
-    <!--     android:layout_margin="16dp" -->
-    <!--     android:orientation="horizontal" -->
-    <!--     app:layout_constraintBottom_toBottomOf="@+id/map" -->
-    <!--     app:layout_constraintStart_toStartOf="parent"> -->
-
-    <!--     <ImageButton -->
-    <!--         android:id="@+id/btnStart" -->
-    <!--         android:layout_width="60dp" -->
-    <!--         android:layout_height="60dp" -->
-    <!--         android:layout_marginEnd="8dp" -->
-    <!--         android:background="@drawable/circle" -->
-    <!--         android:backgroundTint="@color/white" -->
-    <!--         android:contentDescription="@string/start_activity" -->
-    <!--         android:padding="2dp" -->
-    <!--         android:scaleType="fitCenter" -->
-    <!--         android:src="@drawable/ic_start" -->
-    <!--         android:tint="@color/purple_200" /> -->
-
-    <!--     <ImageButton -->
-    <!--         android:id="@+id/btnStop" -->
-    <!--         android:layout_width="60dp" -->
-    <!--         android:layout_height="60dp" -->
-    <!--         android:layout_marginStart="8dp" -->
-    <!--         android:background="@drawable/circle" -->
-    <!--         android:backgroundTint="@color/white" -->
-    <!--         android:contentDescription="@string/stop_activity" -->
-    <!--         android:padding="4dp" -->
-    <!--         android:scaleType="fitCenter" -->
-    <!--         android:src="@drawable/ic_stop" -->
-    <!--         android:tint="@color/purple_200" /> -->
-
-    <!-- </LinearLayout> -->
+    <Button
+        android:id="@+id/btnNavigationStart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_start_background"
+        android:text="@string/start"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toTopOf="@id/clStats"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/clStats"
         android:layout_width="match_parent"
         android:layout_height="240dp"
-        android:background="@color/white"
+        android:background="@color/primary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent" >
 
-
-        <!-- <androidx.constraintlayout.widget.ConstraintLayout -->
-        <!--     android:layout_width="wrap_content" -->
-        <!--     android:layout_height="100dp" -->
-        <!--     app:layout_constraintEnd_toEndOf="parent" -->
-        <!--     app:layout_constraintStart_toStartOf="parent" -->
-        <!--     app:layout_constraintTop_toTopOf="parent"> -->
-
-        <!--     <TextView -->
-        <!--         android:id="@+id/tvDurationValue" -->
-        <!--         android:layout_width="wrap_content" -->
-        <!--         android:layout_height="wrap_content" -->
-        <!--         android:text="00:00:00" -->
-        <!--         android:textSize="40sp" -->
-        <!--         android:textStyle="bold" -->
-        <!--         app:layout_constraintStart_toStartOf="parent" -->
-        <!--         app:layout_constraintTop_toTopOf="parent" /> -->
-
-        <!--     <TextView -->
-        <!--         android:id="@+id/tvDuration" -->
-        <!--         android:layout_width="wrap_content" -->
-        <!--         android:layout_height="wrap_content" -->
-        <!--         android:text="@string/duration" -->
-        <!--         android:textSize="16sp" -->
-        <!--         app:layout_constraintEnd_toEndOf="@+id/tvDurationValue" -->
-        <!--         app:layout_constraintStart_toStartOf="@+id/tvDurationValue" -->
-        <!--         app:layout_constraintTop_toBottomOf="@+id/tvDurationValue" /> -->
-
-        <!--     <TextView -->
-        <!--         android:id="@+id/tvDistanceValue" -->
-        <!--         android:layout_width="wrap_content" -->
-        <!--         android:layout_height="wrap_content" -->
-        <!--         android:layout_marginStart="32dp" -->
-        <!--         android:text="0.00" -->
-        <!--         android:textSize="40sp" -->
-        <!--         android:textStyle="bold" -->
-        <!--         app:layout_constraintStart_toEndOf="@+id/tvDurationValue" -->
-        <!--         app:layout_constraintTop_toTopOf="@+id/tvDurationValue" /> -->
-
-        <!--     <TextView -->
-        <!--         android:id="@+id/tvDistance" -->
-        <!--         android:layout_width="wrap_content" -->
-        <!--         android:layout_height="wrap_content" -->
-        <!--         android:text="@string/duration" -->
-        <!--         android:textSize="16sp" -->
-        <!--         app:layout_constraintEnd_toEndOf="@+id/tvDistanceValue" -->
-        <!--         app:layout_constraintStart_toStartOf="@+id/tvDistanceValue" -->
-        <!--         app:layout_constraintTop_toBottomOf="@+id/tvDistanceValue" /> -->
-        <!-- </androidx.constraintlayout.widget.ConstraintLayout> -->
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout2"
+            android:id="@+id/clDistance"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -140,34 +66,50 @@
                 android:orientation="horizontal"
                 app:layout_constraintGuide_begin="50dp" />
 
-            <TextView
-                android:id="@+id/textView13"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0.00 km"
-                android:textSize="34sp"
+                android:gravity="center_horizontal"
                 app:layout_constraintBottom_toTopOf="@+id/guideline1"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/tvDistanceValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:textSize="34sp" />
+
+                <TextView
+                    android:id="@+id/tvDistanceUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="km"
+                    android:textSize="34sp"
+                    android:layout_marginStart="8dp"/>
+
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/textView14"
+                android:id="@+id/tvDistance"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Distance"
+                android:text="@string/distance"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guideline1" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout4"
+            android:id="@+id/clDuration"
             android:layout_width="0dp"
             android:layout_height="80dp"
-            app:layout_constraintEnd_toStartOf="@id/constraintLayout5"
+            app:layout_constraintEnd_toStartOf="@id/clAvgPace"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+            app:layout_constraintTop_toBottomOf="@+id/clDistance">
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline2"
@@ -177,7 +119,7 @@
                 app:layout_constraintGuide_begin="50dp" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/tvDurationValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="00:00:00"
@@ -187,7 +129,7 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/tvDuration"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Duration"
@@ -195,15 +137,16 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout5"
+            android:id="@+id/clAvgPace"
             android:layout_width="0dp"
             android:layout_height="80dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/constraintLayout4"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+            app:layout_constraintStart_toEndOf="@id/clDuration"
+            app:layout_constraintTop_toBottomOf="@+id/clDistance">
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline3"
@@ -212,36 +155,50 @@
                 android:orientation="horizontal"
                 app:layout_constraintGuide_begin="50dp" />
 
-            <TextView
-                android:id="@+id/textView6"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0:00 km"
-                android:textSize="32sp"
+                android:gravity="center_horizontal"
                 app:layout_constraintBottom_toTopOf="@+id/guideline3"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/tvAvgPageValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:00"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/tvAvgPageUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="km"
+                    android:textSize="32sp"
+                    android:layout_marginStart="8dp"/>
+
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/tvAvgPace"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Avg Pace"
+                android:text="@string/avg_pace"
                 android:textSize="15sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout6"
+            android:id="@+id/clSteps"
             android:layout_width="0dp"
             android:layout_height="80dp"
-            app:layout_constraintEnd_toEndOf="@+id/constraintLayout4"
+            app:layout_constraintEnd_toEndOf="@+id/clDuration"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+            app:layout_constraintTop_toBottomOf="@+id/clDuration">
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline4"
@@ -251,7 +208,7 @@
                 app:layout_constraintGuide_begin="50dp" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/tvStepsValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
@@ -261,22 +218,24 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/tvSteps"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Steps"
+                android:text="@string/steps"
                 android:textSize="15sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clCalories"
             android:layout_width="0dp"
             android:layout_height="80dp"
-            app:layout_constraintEnd_toEndOf="@+id/constraintLayout5"
-            app:layout_constraintStart_toStartOf="@+id/constraintLayout5"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
+            app:layout_constraintEnd_toEndOf="@+id/clAvgPace"
+            app:layout_constraintStart_toStartOf="@+id/clAvgPace"
+            app:layout_constraintTop_toBottomOf="@+id/clAvgPace">
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline5"
@@ -285,25 +244,41 @@
                 android:orientation="horizontal"
                 app:layout_constraintGuide_begin="50dp" />
 
-            <TextView
-                android:id="@+id/textView10"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0 Cal"
-                android:textSize="32sp"
+                android:gravity="center_horizontal"
                 app:layout_constraintBottom_toTopOf="@+id/guideline5"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/tvCaloriesValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/tvCaloriesUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/calories_unit"
+                    android:textSize="32sp"
+                    android:layout_marginStart="8dp"/>
+
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/tvCalories"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Calories"
+                android:text="@string/calories"
                 android:textSize="15sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <View
@@ -317,7 +292,7 @@
             android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+            app:layout_constraintTop_toBottomOf="@+id/clDistance" />
 
         <View
             android:id="@+id/SplitLine_hor2"
@@ -330,7 +305,7 @@
             android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+            app:layout_constraintTop_toBottomOf="@+id/clAvgPace" />
 
         <View
             android:id="@+id/SplitLine_ver1"
@@ -342,9 +317,9 @@
             android:elevation="1dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
-            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout4"
-            app:layout_constraintStart_toEndOf="@+id/constraintLayout4"
-            app:layout_constraintTop_toTopOf="@+id/constraintLayout4" />
+            app:layout_constraintBottom_toBottomOf="@+id/clDuration"
+            app:layout_constraintStart_toEndOf="@+id/clDuration"
+            app:layout_constraintTop_toTopOf="@+id/clDuration" />
 
         <View
             android:id="@+id/SplitLine_ver2"
@@ -356,20 +331,32 @@
             android:elevation="1dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
-            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout6"
-            app:layout_constraintStart_toEndOf="@+id/constraintLayout6"
-            app:layout_constraintTop_toTopOf="@+id/constraintLayout6" />
+            app:layout_constraintBottom_toBottomOf="@+id/clSteps"
+            app:layout_constraintStart_toEndOf="@+id/clSteps"
+            app:layout_constraintTop_toTopOf="@+id/clSteps" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="START"
-        android:background="@drawable/btn_start_background"
-        app:layout_constraintBottom_toBottomOf="@+id/map"
+    <!-- <LinearLayout -->
+    <!--     android:id="@+id/linearLayout" -->
+    <!--     android:layout_width="match_parent" -->
+    <!--     android:layout_height="50dp" -->
+    <!--     android:orientation="vertical" -->
+    <!--     app:layout_constraintBottom_toTopOf="@+id/btnNavigationStart" -->
+    <!--     app:layout_constraintEnd_toEndOf="parent" -->
+    <!--     app:layout_constraintStart_toStartOf="@+id/btnNavigationStart"> -->
+    <!--      -->
+    <!-- </LinearLayout> -->
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/myCoordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        app:layout_constraintBottom_toTopOf="@+id/btnNavigationStart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"></androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,6 +13,7 @@
     <color name="btnBack">#757575</color>
     <color name="fabSave">#FFFFFF</color>
     <color name="primary">#FFFFFF</color>
+    <color name="primary2">#FFFFFF</color>
     <color name="primary_purple">#FFBB86FC</color>
     <color name="primary_dark">#ff212121</color>
 </resources>

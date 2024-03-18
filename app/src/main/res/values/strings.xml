@@ -45,7 +45,7 @@
     <string name="polish">Polish</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="browse_activities_fragment">Browse Activities</string>
-    <string name="name_placeholder">John Doe</string>
+    <string name="name_placeholder">Your Name</string>
     <string name="duration">Duration</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -83,5 +83,18 @@
     <string name="activity_title">Activity Title</string>
     <string name="distance">Distance</string>
     <string name="calories_burned">Calories Burned</string>
-    <!--     AIzaSyCs7BvKdNdWwJt0WQ9qxDFqLuEAtdR64Os -->
+    <string name="start">Start</string>
+    <string name="avg_pace">Avg Pace</string>
+    <string name="calories">Calories</string>
+    <string name="calories_unit">Cal</string>
+    <string name="share">Share</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="navigation_tip">Here the app will show directions for the prepared route and start measuring physical activity</string>
+    <string name="registration_tip">Here the app will track and show the user\'s activity on the map and start measuring physical activity</string>
+    <string name="save">Save</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="description">Description</string>
 </resources>

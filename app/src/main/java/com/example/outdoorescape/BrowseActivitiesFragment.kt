@@ -49,7 +49,6 @@ class BrowseActivitiesFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_browse_activities, container, false)
     }
 
-    @OptIn(ExperimentalTime::class)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 

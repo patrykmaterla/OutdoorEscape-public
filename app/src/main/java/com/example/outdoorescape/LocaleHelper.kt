@@ -11,7 +11,6 @@ import java.util.Locale
 
 private lateinit var sharedPreferences: SharedPreferences
 
-// TODO: Make lang change in whole app / and save this preference.
 object LocaleHelper {
     // fun onAttach(context: Context) {
     //     val locale: String? = getPersistedLocale(context)
@@ -61,6 +60,4 @@ object LocaleHelper {
         }
         Runtime.getRuntime().exit(0)
     }
-
-
 }

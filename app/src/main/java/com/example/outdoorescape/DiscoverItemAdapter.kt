@@ -61,21 +61,6 @@ class DiscoverItemAdapter(private val mList: List<ItemDiscoverViewModel>) : Recy
         viewGroup.tvDescription.text = (ItemDiscoverViewModel.description)
 
         viewGroup.tvDistance.text = ItemDiscoverViewModel.distance.toString()
-
-        // Add extra margin to the first item
-        // val layoutParams = viewGroup.itemView.layoutParams as RecyclerView.LayoutParams
-        // if (position == 0) {
-        //     // Add 2dp margin to the top for the first item
-        //     val density = viewGroup.itemView.resources.displayMetrics.density
-        //     val marginInDp = (2 * density + 0.5f).toInt() // Convert dp to pixels
-        //     layoutParams.setMargins(marginInDp, marginInDp*2, marginInDp, marginInDp)
-        // }
-        // viewGroup.itemView.layoutParams = layoutParams
-
-        // viewGroup.itemView.setOnClickListener {
-        //     listener.onItemClick(position)
-        // }
-
     }
 
     // return the number of the items in the list

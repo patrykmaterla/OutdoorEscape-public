@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="primary">#121212</color>
+    <color name="primary2">#121212</color>
     <color name="fabSave">#424242</color>
     <color name="primary_purple">#FF6200EE</color>
     <color name="primary_dark">#ffffff</color>

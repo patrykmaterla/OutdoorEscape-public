@@ -11,6 +11,9 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.outdoorescape.databinding.ActivityDashboardBinding
 
+/**
+ * Everything was moved to MainActivity
+ */
 class Dashboard : AppCompatActivity() {
 
     private lateinit var binding: ActivityDashboardBinding

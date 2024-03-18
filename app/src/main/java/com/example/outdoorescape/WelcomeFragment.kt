@@ -11,11 +11,16 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 
+/**
+ * Fragment that let user choose to either: sign in or sign up to his account.
+ * Temporarily using the app without an account is enabled via pressing `tvWithoutAnAccount`.
+ */
 class WelcomeFragment : Fragment() {
 
     private lateinit var tvWithoutAccount: TextView
     private lateinit var btnSignIn: Button
     private lateinit var btnSignUp: Button
+    // Shared preference is used to save user sign in state
     private lateinit var sharedPreferences: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {

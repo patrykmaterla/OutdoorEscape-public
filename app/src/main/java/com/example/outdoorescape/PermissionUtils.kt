@@ -50,7 +50,6 @@ object PermissionUtils {
             )
         }
 
-
     /**
      * Requests the fine and coarse location permissions. If a rationale with an additional
      * explanation should be shown to the user, displays a dialog that triggers the request.

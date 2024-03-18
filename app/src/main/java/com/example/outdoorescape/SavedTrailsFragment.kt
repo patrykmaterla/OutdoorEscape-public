@@ -49,11 +49,8 @@ class SavedTrailsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val rvSavedTrails = view.findViewById<RecyclerView>(R.id.rvSavedTrails)
-
         rvSavedTrails.layoutManager = LinearLayoutManager(requireContext())
-
         val data = ArrayList<ItemSavedTrailsViewModel>()
-
         // Dummy data
         for (i in 1..50) {
             data.add(ItemSavedTrailsViewModel(R.drawable.map, getString(R.string.discover_trail_title), getString(R.string.discover_trail_description), 2.13f))
@@ -65,20 +62,15 @@ class SavedTrailsFragment : Fragment() {
                 setCurrentFragment(TrailFragment())
             }
         })
-
         rvSavedTrails.adapter = adapter
     }
 
     override fun onResume() {
         super.onResume()
-
-
     }
 
     override fun onPause() {
         super.onPause()
-
-        // fragmentManager?.popBackStack()
 
         activity?.window?.apply {
             // Restore the default status bar behavior
